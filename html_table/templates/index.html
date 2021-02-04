@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <style>
+        .all {
+            display: flex;
+            width: 500px;
+            padding-left: 20px;
+            justify-content: space-between;
+        }
+        h1{
+            font-size: 30px
+        }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    </head>
+    <body>
+        
+        <div class="all">
+            <div class="first">
+                <h1>First Name</h1>
+                    {% for dict in list %}
+                        <p>{{ dict['first_name'] }}</p>
+                    {% endfor %}
+            </div>
+            <div class="last">
+                <h1>Last Name</h1>
+                    {% for dict in list %}
+                        <p>{{ dict['last_name'] }}</p>
+                    {% endfor %}
+            </div>
+            <div class="full">
+                <h1>Full Name</h1>
+                    {% for dict in list %}
+                        <p>{{ dict['first_name'] }}  {{ dict['last_name'] }}</p>
+                    {% endfor %}
+            </div>    
+        </div>
+        
+            
+
+    
+    </body>
+</html>
