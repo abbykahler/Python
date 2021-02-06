@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Add an Author</h1>
+        <form action="/process_author" method="post">
+            {% csrf_token %}
+            <label for="first_name">First Name</label>
+            <input type="text" name='first_name' id="first_name">
+            <label for="last_name">Last Name</label>
+            <input type="text" name='last_name' id="last_name">
+            <label for="notes">Notes</label>
+            <input type="text" name='notes' id="notes">
+            <button>Add</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+                {% for author in all_authors %}
+                    <tr>
+                        <td>{{author.id}}</td>
+                        <td>{{author.first_name}} {{author.last_name}}</td>
+                        <td><a href="/authors/{{author.id}}">View</a></td>
+                    
+                    </tr>
+                {% endfor %}
+            </thead>
+
+
+        </table>
+        
+        <script src="" async defer></script>
+    </body>
+</html>  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <h1>Add a Dojo</h1>
+        <form action="/createDojo"  method="POST">
+                {% csrf_token %}
+            <label for="newDojo" name = "newDojo" id="newDojo">Name:</label>
+            <input type="text">
+            <label for="city" name="city" id="city">City:</label>
+            <input type="text">
+            <label for="state" name="state" id="state">State:</label>
+            <input type="text">
+            <button id="add">Add</button>
+            </form>
+
+        <h1>Add a Ninja</h1>
+        <form action="/createNinja" method="POST">
+            {% csrf_token %}
+            <label for="first_name" name = "first_name" id="first_name">First Name: </label>
+            <input type="text">
+            <label for="last_name" name = "last_name" id="last_name">Last Name: </label>
+            <input type="text">
+            <label for="dojo" name = "dojo" id="dojo">Dojo: </label>
+            <input type="text">
+
+            
+                {% for dojo in dojos%}
+                <option value="{{ dojo }}">{{ dojo }}</option>
+                {% endfor%}
+                </select>
+                <button id="add">Add</button>
+        </form>
+            <h1>All the Dojos</h1>
+            {% for dojo in dojos %}
+            <h3>Ninjas at the {{ dojo.name }} </h3>
+            <h3> {{ ninja.first_name}} </h3>
+            
+            {% endfor %}
+            
+    </body>
+</html>
