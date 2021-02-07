@@ -5,13 +5,31 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="templates/style.css">
+        <style> 
+        .h1{ 
+    text-align: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+        </style>
     </head>
     <body>
         <h1>Add a book!</h1>
-
         <table>
             <form action="/process_book" method="post">
                 {% csrf_token %}
