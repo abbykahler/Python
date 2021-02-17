@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    </head>
+    <body>
+        
+        <h1>All Shows</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Network</th>
+                    <th>Release Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+        </table>
+
+        {% for show in shows %}
+            {% csrf_token %}
+            <tr>
+                <th>{{ show.id }}</th>
+                <th>{{ show.title }}</th>
+                <th>{{ show.network }}</th>
+                <th>{{ show.release_date.date }}</th>
+                
+                <a href="/shows/{{ show.id }}">Show</a>
+
+                <a href="/shows/{{ show.id }}/edit">Edit</a>
+
+                <a href="/shows/{{ show.id }}/destroy">Delete</a><br>   
+            </tr>
+        {% endfor %}
+
+        <a href="/shows/new">Add a New Show</a>
+
+    
+    </body>
+</html>
