@@ -13,8 +13,9 @@ table {
 
 td, th{
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
+
 }
 
 tr:nth-child(even) {
@@ -24,8 +25,21 @@ tr:nth-child(even) {
 
 h1{ 
     text-align: center;
+    padding-top: 20px;
 }
-div {
+.add {
   text-align: center;
+  padding-top: 20px;
+}
+
+.view{
+  padding-left: 20px;
+}
+
+.edit{
+  padding-left: 20px;
+  padding-top: 20px;
+  text-align: center;
+  
 }
   
