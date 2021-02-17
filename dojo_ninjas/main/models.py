@@ -10,8 +10,8 @@ def __repr__(self):
         return f"<Dojo object: {self.name} ({self.city}, {self.state}) [{self.id}]>"
     
 class Ninja(models.Model):
-    first_name = models.CharField(max_length = 255)
-    last_name = models.CharField(max_length = 255)
+    f_name = models.CharField(max_length = 255)
+    l_name = models.CharField(max_length = 255)
     dojo = models.ForeignKey(Dojo, related_name="ninjas", on_delete = models.CASCADE)
     
     def __repr__(self):
