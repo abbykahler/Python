@@ -24,18 +24,16 @@
             <tbody>
             {% for item in items %}
                 <tr>
-                
                     <td>{{item.item}}</td>
                     <td>${{item.price}}</td>
                     <td>
                         <form action = '/process' method='POST'>
                         {% csrf_token %}
-                            <select id="exampleFormControlSelect1" name='quantity'>
+                            <select id="form" name='quantity'>
                             <option value='1'>1</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             </select>
-
                         <input type='hidden' name='id' value='{{item.id}}'>
                         <button type="submit">Buy!</button>
                     </form>
@@ -43,8 +41,6 @@
             {% endfor %}
             </tr>
         </tbody>
-      </table>
-
-
+    </table>
     </body>
 </html>
