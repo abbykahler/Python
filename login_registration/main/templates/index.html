@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Registration</h1>
+        
+        <table>
+            <form action="/register" method="post">
+                {% csrf_token %}
+            
+                <label for="name">Name</label>
+                <input type="text" name='name' id="name"><br>
+
+                <label for="alias">Alias </label>
+                <input type="text" name='alias' id="alias"><br>
+
+                <label for="email">Email</label>
+                <input type="email" name='email' id="email"><br>
+
+                <label for="password">Password</label>
+                <input type="password" name='password' id="password"><br>
+
+                <label for="confirm_password">Confirm PW</label>
+                <input type="password" name='confirm_password' id="confirm_password"><br>
+
+                <button>Register</button><br>
+            </form>       
+        </table>
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+
+
+        <h1>Login</h1>
+
+        
+            <form action="/login" method="post">
+                {% csrf_token %}
+
+                <label for="email">Email</label>
+                <input type="email" name='email' id="login_email"><br>
+
+                <label for="password">Password</label>
+                <input type="password" name='password' id="login_password"><br>
+
+                <button>Log In</button><br>
+            </form>
+        
+
+    </body>
+</html>
