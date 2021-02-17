@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect, HttpResponse
-from .models import Show, TvManager
+from django.shortcuts import render, redirect
+from .models import Show
 from django.contrib import messages
+
 
 
 def index(request):
@@ -49,7 +50,7 @@ def EditShow(request, id):
     }
     return render(request, 'editShow.html', context)
 
-def UpdateShow(request, id):
+def UpdateShow(request, id, ):
     errors = Show.objects.validator(request.POST)
     if len(errors) > 0:
         for key, value in errors.items():
