@@ -4,7 +4,7 @@ from datetime import datetime
 
 def index(request):
     if 'total_gold' not in request.session:
-        request.session['total_gold'] = 2
+        request.session['total_gold'] = 0
     return render(request, 'index.html')
 
 def process(request, gold):
