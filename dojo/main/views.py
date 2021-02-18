@@ -16,7 +16,6 @@ def success(request, name, dojo_location, favorite_language, comment):
         'name':name,
         'dojo_location':dojo_location,
         'favorite_language': favorite_language,
-        'comment': comment
-        
+        'comment': comment,
     }
     return render(request, 'success.html',context)
