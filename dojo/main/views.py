@@ -1,22 +1,21 @@
-from django.shortcuts import render, HttpResponse,redirect
+from django.shortcuts import render,redirect
 
 def index(request):
     return render(request, "index.html")
 
-# Create your views here.
 def processing_form_data(request):
     form_data = request.POST
     name = request.POST['name']
-    dojolocation = request.POST['dojolocation']
-    favoritelanguage = request.POST['favoritelanguage']
+    dojo_location = request.POST['dojolocation']
+    favorite_language = request.POST['favoritelanguage']
     comment = request.POST['comment']
     return redirect ('/success')
 
-def success(request, name, dojolocation, favoritelanguage, comment):
+def success(request, name, dojo_location, favorite_language, comment):
     context = {
         'name':name,
-        'dojolocation':dojolocation,
-        'favoritelanguage': favoritelanguage,
+        'dojo_location':dojo_location,
+        'favorite_language': favorite_language,
         'comment': comment
         
     }
