@@ -6,7 +6,11 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css' %}">
 
     </head>
     <body>
@@ -14,27 +18,18 @@
             <h1> Coding Dojo Wall </h1>
             <h2> Welcome {{ user.first_name }} {{ user.last_name}}</h2>
             <a href="/register">log off</a>
-
             <h3>Post a message</h3>
-
-
             <form action="/comment/{{ post.id }}" method="POST">
                 {% csrf_token %}
-                <textarea class="form-control" name="comment" id="comment"></textarea>
+                <textarea class="form-control" name="comment" id="comment" rows="3"></textarea>
                             
                 <button type="submit">Post a message</button>
                     </form>
                         {% for comment in comments %}
-                        
                             <h5>{{ comment.author.first_name }} {{ comment.author.last_name }} - {{ comment.created_at }}</h6>
                             <p>{{ comment.comment }}</p>
-                        
-    
                         {% endfor %}
-        
-                    
             </form>
-
         </header>
     </body>
 </html>
