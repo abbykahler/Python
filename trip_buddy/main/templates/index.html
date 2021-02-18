@@ -13,27 +13,27 @@
     </head>
     <body>
         <h1>Registration</h1>
-        
+        <div class="input-field">
         <table>
             <form action="/register" method="post">
                 {% csrf_token %}
             
-                <label for="first_name">First name</label>
-                <input type="text" name='first_name' id="first_name"><br>
+                <label for="first_name"></label>
+                <input type="text" placeholder="First Name" name='first_name' id="first_name"><br>
+                
 
-                <label for="last_name">Last name </label>
-                <input type="text" name='last_name' id="last_name"><br>
+                <label for="last_name"></label>
+                <input type="text" placeholder="Last Name"name='last_name' id="last_name"><br> 
+                
+                <label for="email"></label>
+                <input type="email" placeholder="Email"name='email' id="email"><br>
 
-                <label for="email">Email</label>
-                <input type="email" name='email' id="email"><br>
+                <label for="password"></label>
+                <input type="password" placeholder="Password"name='password' id="password"><br>
 
-                <label for="password">Password</label>
-                <input type="password" name='password' id="password"><br>
-
-                <label for="confirm_password">Confirm PW</label>
-                <input type="password" name='confirm_password' id="confirm_password"><br>
-
-                <button>Register</button><br>
+                <label for="confirm_password"></label>
+                <input type="password"  placeholder="Confirm Password"name='confirm_password' id="confirm_password"><br>
+                <button class="btn btn-block text-center my-3">Register</button>
             </form>       
         </table>
         {% if messages %}
@@ -41,23 +41,18 @@
                 <p>{{ message }}</p>
             {% endfor %}
         {% endif %}
-
-
         <h1>Login</h1>
-
-        
             <form action="/login" method="post">
                 {% csrf_token %}
 
-                <label for="email">Email</label>
-                <input type="email" name='email' id="login_email"><br>
+                <label for="email"></label>
+                <input type="email" placeholder="Email"name='email' id="login_email"><br>
 
-                <label for="password">Password</label>
-                <input type="password" name='password' id="login_password"><br>
+                <label for="password"></label>
+                <input type="password" placeholder="Password"name='password' id="login_password"><br>
 
-                <button>Log In</button><br>
+                <button class="btn btn-block text-center my-3">Log In</button><br>
             </form>
-        
-
+        </div> 
     </body>
 </html>

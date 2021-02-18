@@ -13,17 +13,16 @@
     </head>
     <body>
         <h1>Hello {{current_user.first_name}}! Let's edit your trip!</h1>
-        
-        {% for message in messages %}
-        <p>{{ message }}</p>
-        {% endfor %}
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %} 
 
         <table>
             <form action="/trips/{{trip_id}}/save" method="post">
                 {% csrf_token %}
             
                 <label for="destination">Destination:</label>
-                <input type="text" name='destination' id="destination"><br>
+                <input type="text" placeholder="Destination"name='destination' id="destination"><br>
 
                 <label for="start_date">Start Date: </label>
                 <input type="date" name='start_date' id="start_date"><br>
@@ -34,7 +33,6 @@
                 <label for="plan">Plan:</label>
                 <textarea name="plan" cols="30" rows="10" id="plan"></textarea><br>
 
-        
                 <button>Submit</button><br>
             </form>       
         </table>
@@ -43,8 +41,5 @@
                 <p>{{ message }}</p>
             {% endfor %}
         {% endif %}
-
-
-    
     </body>
 </html>
