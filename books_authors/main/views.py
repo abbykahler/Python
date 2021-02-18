@@ -46,7 +46,6 @@ def process_author(request):
     )  
     return redirect('/authors')  
 
-
 def author_info(request, author_id):
     this_author = Author.objects.get(id=author_id)
     context = {
@@ -55,11 +54,6 @@ def author_info(request, author_id):
     }
     return render(request, 'author_info.html',context)
 
-
-
-
-
-
 def authors_add(request,author_id):
     this_author = Author.objects.get(id=author_id)
     context = {
@@ -67,7 +61,6 @@ def authors_add(request,author_id):
         'all_authors' : Author.objects.all()
     }
     return render(request,"author_info.html",context)
-
 
 def add_book_to_author(request): 
     this_book = Book.objects.get(id=request.POST['book_id'])
