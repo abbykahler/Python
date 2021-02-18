@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+        
+        h1{
+            text-align: center;
+            padding-top: 50px;
+        }
+        table tr td{
+            
+            width: 150px;
+            height: 150px;
+            background-color: {{color}};
+            
+        }
+
+        tr{
+            display: inline-block;
+            
+        }
+        
+        </style>
+    </head>
+    <body>
+        
+        <h1>Welcome!</h1>
+        <table>
+        {% for i in range(times): %}
+            <tr>
+                <td class='box1'></td> 
+
+            </tr>
+        {% endfor %}    
+        </table>
+    </body>
+</html>
