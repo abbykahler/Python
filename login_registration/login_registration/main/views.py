@@ -23,8 +23,8 @@ def register(request):
     # print(hashed)
     
     new_user = User.objects.create(
-        name=request.POST['name'],
-        alias=request.POST['alias'],
+        first_name=request.POST['first_name'],
+        last_name=request.POST['last_name'],
         email=request.POST['email'],
         password=request.POST['password'],
     )
@@ -66,7 +66,7 @@ def login(request):
         user_password = user_list[0].password
         request.session['user_id'] = our_user.id
         if user_password == request.POST['password']:
-            return redirect('/')
+            return redirect('/success')
         else:
             messages.error(request, "Password incorrect!")
             return redirect('/')
