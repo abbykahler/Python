@@ -13,9 +13,8 @@
     </head>
     <body>
 
-        
         <h1>Hello {{ current_user.first_name }}! Create a trip!</h1>
-        
+    
         <form action="/trips/create" method="post">
             {% csrf_token %}
             <label for="destination">Destination:</label>

@@ -11,10 +11,9 @@
         <link rel="stylesheet" href="{% static 'style.css' %}"> 
     </head>
     <body>
+        <a href="/logout">Logout</a>
         <h1>Hello {{ current_user.first_name }}! Read about this trip!</h1>
-            <a href="/dashboard">Dashboard</a> 
-            <a href="/logout">Logout</a>
-        
+            <a href="/dashboard">Dashboard</a>     
         <h2>{{current_trip.destination}}</h2>
             <p>Start Date: {{current_trip.start_date}}</p>
             <p>End Date: {{current_trip.end_date}}</p>

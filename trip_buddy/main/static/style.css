@@ -13,13 +13,13 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid #af96b5;
     text-align: center;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #8b1bc3;
 }
 
 h1 {
@@ -68,6 +68,13 @@ body {
     border-radius: 20px;
     background-color: #400485;
     color: #fff
+}
+.log {
+    margin-left: 20px;
+}
+
+.addtrip{
+    font-size:200px;
 }
 @media(max-width: 575px) {
     

@@ -12,11 +12,11 @@
         <link rel="stylesheet" href="{% static 'style.css' %}"> 
     </head>
     <body>
+    <div class="logout">
+            <a href="/logout">Logout</a>
+        <div>
         <h1>Hello {{current_user.first_name}}</h1>
-        <a href="/logout">Logout</a>
-        <a href="/trips/new">Create a new trip!</a>
-
-        <h2>Your trips:</h2>
+        <h2>Your trips</h2>
         <table>
             <tr>
                 <th>Destination</th>
@@ -39,5 +39,8 @@
             
             </tbody>
         </table>
+                <div class="addtrip">
+                    <a href="/trips/new">Create a new trip!</a>
+                </div>
     </body>
 </html>
