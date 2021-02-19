@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Verdana;
+}
+/* table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #af96b5;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #6fc9d7;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+.add {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.view {
+    padding-left: 20px;
+}
+
+.edit {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #6fc9d7;
+    color: #fff
+} */
+img {
+    height: 600px;
+}
+body {
+    background-color: #eee;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
+    text-align: center;
+    padding-top: 20px;
+}
+header{
+    display: flex;
+    padding-left: 20px;
+}
+
+.menu{
+    padding-left: 600px;
+    padding-top: 20px;
+}
+ 
+/* .input-field {
+    border-radius: 3px;
+    padding: 5px;
+    padding-top:20px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #400485;
+    color: #400485
+} */
+.btn.btn-block {
+    border-radius: 10px;
+    background-color: #9b71a5;
+    color: rgb(235, 235, 235)
+}
+.contact{
+    border-radius: 3px;
+    border: 1px solid #e1dde6;
+    max-width: 50%;
+    padding-top: 20px;
+    margin-left: 300px;
+
+}
+.contact_body{
+    width: 300px;
+    border: 1px solid #400485;
+
+}
+footer{
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+@media(max-width: 575px) {
+    
+}
+
+@media(max-width:424px) {
+    
+    }
