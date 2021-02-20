@@ -5,6 +5,9 @@
     font-size: 18px;
     font-family: Verdana;
 }
+h1{ font-size:200px;
+
+}
 /* table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -98,6 +101,19 @@ footer{
     height: 200px;
     background-color: rgb(255, 255, 255);
 }
+.parallax {
+    /* The image used */
+    background-image: url("static/img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 @media(max-width: 575px) {
     
 }

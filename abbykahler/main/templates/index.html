@@ -10,6 +10,19 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         {% load static %}
         <link rel="stylesheet" href="{% static 'style.css' %}"> 
+        <style>.parallax {
+    /* The image used */
+    background-image: url("static/img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }</style>
     </head>
     <body>
         <header>
@@ -24,8 +37,31 @@
         </header>
 
         <div class="middle">
+            
             <h3>Hi! My name is Abby and welcome to my page.</h3>
             <h3>Continue to learn more</h3>
+            <div class="parallax"></div>
+
+            <div style="height:600px;background-color:black;font-size:36px">
+            Scroll Up and Down this page to see the parallax scrolling effect.
+            This div is just here to enable scrolling.
+            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            </div>
+            <div class="parallax"></div>
+
+            <div style="height:600px;background-color:blue;font-size:36px">
+            Scroll Up and Down this page to see the parallax scrolling effect.
+            This div is just here to enable scrolling.
+            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            </div>
+            <div class="parallax"></div>
+            <div style="height:600px;background-color:green;font-size:36px">
+            Scroll Up and Down this page to see the parallax scrolling effect.
+            This div is just here to enable scrolling.
+            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            </div>
+
+            
 
         </div>
         <footer>
