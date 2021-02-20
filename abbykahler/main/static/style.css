@@ -84,13 +84,13 @@ header{
 .contact{
     border-radius: 3px;
     border: 1px solid #e1dde6;
-    max-width: 50%;
+    /* max-width: 50%; */
     padding-top: 20px;
     margin-left: 300px;
 
 }
 .contact_body{
-    width: 300px;
+    /* width: 300px; */
     border: 1px solid #400485;
 
 }
@@ -101,7 +101,6 @@ footer{
 @media(max-width: 575px) {
     
 }
-
 @media(max-width:424px) {
     
     }
