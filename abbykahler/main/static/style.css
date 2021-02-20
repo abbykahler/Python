@@ -4,10 +4,33 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: Verdana;
-}
-h1{ font-size:200px;
+    
 
+    
 }
+@media only screen and ( max-width: 576px ) {
+    .med-2, .lg-1 {
+        display: none;
+    }
+}
+
+@media only screen and ( min-width: 768px ) {
+    .sm-4, .lg-1 {
+        display: none;
+    }
+}
+
+@media only screen and ( min-width: 992px) {
+    .lg-1 {
+        display: block;
+    }
+    .sm-4, .med-2 {
+        display: none;
+    }
+}
+/* h1{ font-size:200px;
+
+} */
 /* table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -49,9 +72,9 @@ button {
     background-color: #6fc9d7;
     color: #fff
 } */
-img {
+/* img {
     height: 600px;
-}
+} */
 body {
     background-color: #eee;
     height: 100vh;
@@ -66,7 +89,7 @@ header{
 }
 
 .menu{
-    padding-left: 600px;
+    padding-left: 40%;
     padding-top: 20px;
 }
  
@@ -98,8 +121,12 @@ header{
 
 }
 footer{
-    height: 200px;
-    background-color: rgb(255, 255, 255);
+    height: 180px;
+    background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
+}
+
+.bottom{
+    padding-top: 20px;
 }
 .parallax {
     /* The image used */
@@ -113,10 +140,4 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-@media(max-width: 575px) {
-    
 }
-@media(max-width:424px) {
-    
-    }
