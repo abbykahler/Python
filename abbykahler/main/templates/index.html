@@ -13,7 +13,7 @@
     <style>
         .parallax {
         background-image: url("static/img_parallax.jpg");
-        min-height: 500px; 
+        min-height: 400px; 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -59,24 +59,34 @@ function FadeInSection(props) {
     </script> {% endcomment %}
     </head>
     <body>
+
         <header>
             <h1>Abby Kahler</h1>
                 <div class="menu">
-                    <a href="/about">About</a> 
-                    <a href="/work">Work</a>
-                    <a href="/education">Education</a> 
-                    <a href="/contact">Contact</a>
-                    <h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-        </header>
-
+        </header> 
         <div class="middle">
             
                 <h3>Hi! My name is Abby and welcome to my page.</h3>
                 <h3>Continue to learn more about me</h3>
-            
+
             <div class="parallax"></div>
             <div style="height:1000px;background-color:black;font-size:36px">
+            <h1><a id="about"></a>About</h1>
+            Scroll Up and Down this page to see the parallax scrolling effect.
+            This div is just here to enable scrolling.
+            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            </div>
+            
+            <div class="parallax"></div>
+            <div style="height:1000px;background-color:yellow;font-size:36px">
+            <h1><a id="work"></a>Work</h1>
             Scroll Up and Down this page to see the parallax scrolling effect.
             This div is just here to enable scrolling.
             Tip: Try to remove the background-attachment property to remove the scrolling effect.
@@ -85,16 +95,20 @@ function FadeInSection(props) {
 
             <div class="parallax"></div>
             <div style="height:1000px;background-color:blue;font-size:36px">
+            <h1><a id="education"></a>Education</h1>
             Scroll Up and Down this page to see the parallax scrolling effect.
             This div is just here to enable scrolling.
             Tip: Try to remove the background-attachment property to remove the scrolling effect.
             </div>
 
             <div class="parallax"></div>
-            <div style="height:1000px;background-color:green;font-size:36px">
+            <div style="height:1000px;background-color:black;font-size:36px">
+            <h1><a id="contact"></a>Contact</h1>
+
             Scroll Up and Down this page to see the parallax scrolling effect.
             This div is just here to enable scrolling.
             Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            
             </div>
 
         </div>
@@ -104,11 +118,11 @@ function FadeInSection(props) {
                 <a href="/contact">Contact</a><br>
                 <div class="logo">
                     <a href="https://www.linkedin.com/in/michael-brown-7ba25016/">
-                    <img border="0" alt="linkedin" src="static/linkedin.png" width="60" height="60">
+                    <img border="0" alt="linkedin" src="static/linkedin.png" width="60" height="60"></a>
                     <a href="https://github.com/abbykahler">
-                    <img border="0" alt="github" src="static/github.png" width="60" height="60">
+                    <img border="0" alt="github" src="static/github.png" width="60" height="60"></a>
                     <a href="https://www.facebook.com/Abbykahler10/">
-                    <img border="0" alt="facebook" src="static/facebook.png" width="60" height="60">
+                    <img border="0" alt="facebook" src="static/facebook.png" width="60" height="60"></a>
                 </div>
                 <p>© 2021 AbbyKahler</p>
             </div>
