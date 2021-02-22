@@ -59,7 +59,6 @@ function FadeInSection(props) {
     </script> {% endcomment %}
     </head>
     <body>
-
         <header>
             <h1>Abby Kahler</h1>
                 <div class="menu">
@@ -71,18 +70,17 @@ function FadeInSection(props) {
                     </ul>
                 </div>
         </header> 
-
         <div class="middle">
             <h3>Hi! My name is Abby and welcome to my page.</h3>
             <h3>Continue to learn more about me</h3>
 
-            <div class="parallax">
+            <div class="parallax"></div>
                 <div style="height:1000px;background-color:black;font-size:36px">
                     <h1><a id="about"></a>About</h1>
                     <img src="static/image/ninjaman.png" alt="NinjaMan">
                     <a href="/ninjaman">Ninja Man</a>
 
-            </div>
+                </div>
             
             <div class="parallax"></div>
             <div style="height:1000px;background-color:yellow;font-size:36px">
@@ -123,13 +121,23 @@ function FadeInSection(props) {
             
     </div>
             <div class="parallax"></div>
-            <div style="height:1000px;background-color:black;font-size:36px">
+            <div style="height:750px; background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
+            ;font-size:36px">
             <h1><a id="contact"></a>Contact</h1>
+            <div class='contact'>
+            <div class='contact_body'>
+            <form>
+                <label for="name"></label>
+                <input type="text" placeholder="Name"name='name' id="name"><br>
 
-            Scroll Up and Down this page to see the parallax scrolling effect.
-            This div is just here to enable scrolling.
-            Tip: Try to remove the background-attachment property to remove the scrolling effect.
-            
+                <label for="email"></label>
+                <input type="email" name='email' placeholder="Email"id="email"><br>
+
+                <label for="tell"></label>
+                <textarea name="plan" cols="30" rows="5" id="plan" placeholder="Tell me more"></textarea><br>
+
+                <button class="btn btn-block text-center my-3">Message Me!</button><br>
+            </div>
             </div>
         </div>
         <footer>
