@@ -7,6 +7,8 @@ urlpatterns = [
     path('work', views.work),
     path('education', views.education),
     path('contact', views.contact),
+
+
     # path('register', views.register),
     # path('success', views.success),
     # path('failure', views.failure),

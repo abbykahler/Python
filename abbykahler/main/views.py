@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+import random
+from datetime import datetime 
 
 
 def index(request):
@@ -15,6 +17,8 @@ def education(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
 # def register(request):    
 #     errs = User.objects.register_validator(request.POST)
 #     if len(errs) > 0:
