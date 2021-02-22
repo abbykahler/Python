@@ -36,25 +36,25 @@
 } {% endcomment %}
     </style>
     {% comment %} <script>
- 
+
 function FadeInSection(props) {
-  const [isVisible, setVisible] = React.useState(true);
+    const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef();
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
+    entries.forEach(entry => setVisible(entry.isIntersecting));
     });
     observer.observe(domRef.current);
     return () => observer.unobserve(domRef.current);
-  }, []);
-  return (
+}, []);
+    return (
     <div
-      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-      ref={domRef}
+    className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+    ref={domRef}
     >
-      {props.children}
+    {props.children}
     </div>
-  );
+);
 }
     </script> {% endcomment %}
     </head>
@@ -71,6 +71,7 @@ function FadeInSection(props) {
                     </ul>
                 </div>
         </header> 
+
         <div class="middle">
             
                 <h3>Hi! My name is Abby and welcome to my page.</h3>
@@ -96,9 +97,28 @@ function FadeInSection(props) {
             <div class="parallax"></div>
             <div style="height:1000px;background-color:blue;font-size:36px">
             <h1><a id="education"></a>Education</h1>
-            Scroll Up and Down this page to see the parallax scrolling effect.
-            This div is just here to enable scrolling.
-            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            <div class="edu">
+                <div class="lyon">
+                <img src="static/image/lyon.jpg" alt="Lyon College"> 
+                <a href="http://lyon.edu/">
+                <button class="btn">Lyon College</button>
+                </a>
+                </div>
+
+                <div class="mtsu">
+                <img src="static/image/mtsu.jpg" alt="MTSU">
+                <a href="http://mtsu.edu">
+                <button class="btn">Middle Tennessee State University</button>
+                </a> 
+                </div>
+                
+                <div class="dojo">
+                <img src="static/image/codingdojo.jpg" alt="Coding Dojo">
+                <a href="http://codingdojo.com/">
+                <button class="btn">Coding Dojo</button>
+                </a> 
+                </div>
+            </div>
             </div>
 
             <div class="parallax"></div>
@@ -110,9 +130,7 @@ function FadeInSection(props) {
             Tip: Try to remove the background-attachment property to remove the scrolling effect.
             
             </div>
-
         </div>
-        
         <footer>
             <div class="bottom">
                 <a href="/contact">Contact</a><br>
@@ -124,7 +142,7 @@ function FadeInSection(props) {
                     <a href="https://www.facebook.com/Abbykahler10/">
                     <img border="0" alt="facebook" src="static/facebook.png" width="60" height="60"></a>
                 </div>
-                <p>© 2021 AbbyKahler</p>
+                <p>©2021 AbbyKahler</p>
             </div>
         </footer>
     </body>

@@ -6,17 +6,15 @@
     font-family: Verdana;   
 }
 @media only screen and ( max-width: 576px ) {
-    .med-2, .lg-1 {
+    .footer, .lg-1 {
         display: none;
     }
 }
-
 @media only screen and ( min-width: 768px ) {
     .sm-4, .lg-1 {
         display: none;
     }
 }
-
 @media only screen and ( min-width: 992px) {
     .lg-1 {
         display: block;
@@ -25,7 +23,6 @@
         display: none;
     }
 }
-
 body {
     background-color: rgb(252, 252, 252);
     height: 100vh;
@@ -33,7 +30,6 @@ body {
     text-align: center;
     padding-top: 20px;
 }
-
 header {
     background-color: white;
     position: fixed;
@@ -45,34 +41,25 @@ header {
     align-items: center;
     box-shadow: 0 0 25px 0 black;
     padding-left: 20px;
-
 }
 header * {
     display: flex;
     padding-top: 5px;
 }
-
 header li {
     margin: 20px;
 }
-
 header li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
 header h1{
     font-size:19px;
     padding-top: 5px;
-
 }
-/* .menu a{
-    font-size:12px;
-} */
 .menu{
     padding-left: 40%;
     /* padding-top: 10px; */
-    
 }
 .middle{
     background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
@@ -97,31 +84,63 @@ header h1{
     /* max-width: 50%; */
     padding-top: 20px;
     margin-left: 300px;
-
 }
 .contact_body{
     /* width: 300px; */
     border: 1px solid #400485;
-
 }
 footer{
     height: 180px;
     background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
 }
-
 .bottom{
     padding-top: 20px;
 }
 .parallax {
     /* The image used */
     background-image: url("static/img_parallax.jpg");
-
     /* Set a specific height */
     min-height: 500px; 
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.lyon, .mtsu. .dojo{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .lyon img, .mtsu img, .dojo img{    
+    width: 100%;
+    height: 300px;
+  }
+  
+  .lyon .btn, .mtsu .btn, .dojo .btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .lyon .btn:hover , .mtsu .btn:hover, .dojo .btn:hover{
+    background-color: black;
+  }
+  .lyon, .mtsu, .dojo {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
