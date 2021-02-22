@@ -13,7 +13,7 @@
     <style>
         .parallax {
         background-image: url("static/img_parallax.jpg");
-        min-height: 400px; 
+        min-height: 600px; 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -21,6 +21,30 @@
         }
         body {
         height: 100%;
+        }
+        .parallax3 {
+        background-image: url("static/image/edupara.jpg");
+        min-height: 300px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .parallax2 {
+        background-image: url("static/image/workpara.jpg");
+        min-height: 250px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .parallax4 {
+        background-image: url("static/image/contactpara.jpg");
+        min-height: 250px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         }
         {% comment %} .fade-in-section {
         opacity: 0;
@@ -77,12 +101,13 @@ function FadeInSection(props) {
             <div class="parallax"></div>
                 <div style="height:1000px;background-color:black;font-size:36px">
                     <h1><a id="about"></a>About</h1>
+                    <div class="port">
                     <img src="static/image/ninjaman.png" alt="NinjaMan">
                     <a href="/ninjaman">Ninja Man</a>
-
+                    </div>
                 </div>
             
-            <div class="parallax"></div>
+            <div class="parallax2"></div>
             <div style="height:1000px;background-color:yellow;font-size:36px">
             <h1><a id="work"></a>Work</h1>
             
@@ -92,7 +117,7 @@ function FadeInSection(props) {
             </div>
             
 
-            <div class="parallax"></div>
+            <div class="parallax3"></div>
                 <div style>
                 <h1><a id="education"></a>Education</h1>
                 <div class="edu">
@@ -120,7 +145,7 @@ function FadeInSection(props) {
             </div>
             
     </div>
-            <div class="parallax"></div>
+            <div class="parallax4"></div>
             <div style="height:750px; background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
             ;font-size:36px">
             <h1><a id="contact"></a>Contact</h1>

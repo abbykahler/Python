@@ -145,3 +145,7 @@ footer{
     max-width: 100%;
 }
 
+.port img {
+    width: 400px;
+    height:400px;
+}
