@@ -3,6 +3,9 @@ import random
 from datetime import datetime 
 
 
+# from collection.forms import ContactForm
+
+
 
 def index(request):
     return render(request,'index.html')
@@ -20,10 +23,9 @@ def education(request):
     return render(request, 'education.html')
 
 def contact(request):
-    form_class = ContactForm
-
-    return render(request, 'contact.html', {
-        'form': form_class,
+    # form_class = ContactForm
+    return render(request, 'index.html', {
+        # 'form': form_class,
     })
 
 

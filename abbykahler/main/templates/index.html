@@ -13,7 +13,7 @@
     <style>
         .parallax {
         background-image: url("static/img_parallax.jpg");
-        min-height: 600px; 
+        min-height: 400px; 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -46,40 +46,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         }
-        {% comment %} .fade-in-section {
-        opacity: 0;
-        transform: translateY(20vh);
-        visibility: hidden;
-        transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-        will-change: opacity, visibility;
-        }
-        .fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-} {% endcomment %}
     </style>
     {% comment %} <script>
-
-function FadeInSection(props) {
-    const [isVisible, setVisible] = React.useState(true);
-  const domRef = React.useRef();
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => setVisible(entry.isIntersecting));
-    });
-    observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
-}, []);
-    return (
-    <div
-    className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-    ref={domRef}
-    >
-    {props.children}
-    </div>
-);
-}
     </script> {% endcomment %}
     </head>
     <body>
@@ -100,7 +68,7 @@ function FadeInSection(props) {
 
             <div class="parallax"></div>
                 <div style="height:1000px;background-color:black;font-size:36px">
-                    <h1><a id="about"></a>About</h1>
+                    <h1><a id="about"></a></h1>
                     <div class="port">
                     <img src="static/image/ninjaman.png" alt="NinjaMan">
                     <a href="/ninjaman">Ninja Man</a>
@@ -111,7 +79,7 @@ function FadeInSection(props) {
             
             <div class="parallax2"></div>
             <div style="height:1000px;background-color:yellow;font-size:36px">
-            <h1><a id="work"></a>Work</h1>
+            <h1><a id="work"></a></h1>
             
             Scroll Up and Down this page to see the parallax scrolling effect.
             This div is just here to enable scrolling.
@@ -121,7 +89,7 @@ function FadeInSection(props) {
 
             <div class="parallax3"></div>
                 <div style>
-                <h1><a id="education"></a>Education</h1>
+                <h1><a id="education"></a></h1>
                 <div class="edu">
                     <div class="lyon">
                         <img src="static/image/lyon.jpg" alt="Lyon College"> 
@@ -148,23 +116,25 @@ function FadeInSection(props) {
             
     </div>
             <div class="parallax4"></div>
-            <div style="height:750px; background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
+            <div style="height:710px; background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
             ;font-size:36px">
-            <h1><a id="contact"></a>Contact</h1>
             <div class='contact'>
-            <div class='contact_body'>
-            <form>
-                <label for="name"></label>
-                <input type="text" placeholder="Name"name='name' id="name"><br>
+                <div class='contact_body'>
+                    <form>
+                        <h1><a id="contact"></a>Contact Moi</h1>
 
-                <label for="email"></label>
-                <input type="email" name='email' placeholder="Email"id="email"><br>
+                        <label for="contact_name"></label>
+                        <input type="text" placeholder="Name"name='contact_name' id="contact_name"><br>
+                        
+                        <label for="contact_email"></label>
+                        <input type="email" name='contact_email' placeholder="Email"id="contact_email"><br>
 
-                <label for="tell"></label>
-                <textarea name="plan" cols="30" rows="5" id="plan" placeholder="Tell me more"></textarea><br>
+                        <label for="content"></label>
+                        <input type="text" placeholder="What's on your mind"name='content' id="content"
+                        <textarea name="plan" cols="30" rows="10" id="plan" placeholder="Tell me more"></textarea><br>
+                        <button class="btn btn-block text-center my-3">Message Me!</button><br> 
 
-                <button class="btn btn-block text-center my-3">Message Me!</button><br>
-            </div>
+                </div>
             </div>
         </div>
         <footer>

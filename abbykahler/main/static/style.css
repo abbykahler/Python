@@ -30,6 +30,8 @@ body {
     text-align: center;
     padding-top: 20px;
 }
+
+/* HEADER */
 header {
     background-color: white;
     position: fixed;
@@ -61,37 +63,15 @@ header h1{
     padding-left: 40%;
     /* padding-top: 10px; */
 }
+
+/* HEADER */
 .middle{
     background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
 }
-/* .input-field {
-    border-radius: 3px;
-    padding: 5px;
-    padding-top:20px;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid #400485;
-    color: #400485
-} */
-.btn.btn-block {
-    border-radius: 10px;
-    background-color: #9b71a5;
-    color: rgb(235, 235, 235)
-}
-.contact{
-    border-radius: 3px;
-    border: 1px solid #e1dde6;
-    /* max-width: 50%; */
-    padding-top: 20px;
-    margin-left: 300px;
 
-}
-.contact_body{
-    /* width: 300px; */
-    border: 1px solid #400485;
-}
+
 footer{
-    height: 180px;
+    height: 160px;
     background: white;
 }
 .bottom{
@@ -108,8 +88,8 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.lyon, .mtsu. .dojo{
+/* education */
+.lyon, .mtsu,  .dojo{
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -136,7 +116,7 @@ footer{
     text-align: center;
 }
 
-.lyon .btn:hover , .mtsu.btn:hover, .dojo.btn:hover{
+.lyon .btn:hover , .mtsu .btn:hover, .dojo .btn:hover{
     background-color: black;
 }
 .lyon, .mtsu, .dojo {
@@ -144,8 +124,41 @@ footer{
     width: 100%;
     max-width: 100%;
 }
-
+/* education */
 .port img {
-    width: 400px;
-    height:400px;
+    width: 300px;
+    height:300px;
 }
+
+
+/* contact form */
+
+
+@media only screen and (max-width: 768px){
+    .contact, .contact_body {
+        width:100%;
+    }
+}
+    .btn.btn-block {
+        border-radius: 10px;
+        background-color: #9b71a5;
+        color: rgb(235, 235, 235)
+    }
+    .contact{
+        border-radius: 3px;
+        /* max-width: 40%; */
+        padding-top: 20px;
+        margin-left: 35%;
+    
+    }
+    .contact_body{
+        width: 400px;
+        border: 1px solid #400485;
+
+    }
+    .contact_body form{
+        padding-top: 30px;
+        /* width: 90%; */
+    }
+
+/* / contact form */
