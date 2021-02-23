@@ -6,7 +6,7 @@
     font-family: Verdana;   
 }
 @media only screen and ( max-width: 576px ) {
-    .footer, .lg-1 , contact{
+    .footer, .lg-1 {
         display: none;
     }
 }
@@ -16,7 +16,7 @@
     }
 }
 @media only screen and ( min-width: 992px) {
-    .lg-1 {
+    .lg-1 , contact{
         display: block;
     }
     .sm-4, .med-2 {
@@ -67,8 +67,17 @@ header h1{
 /* HEADER END*/
 .middle{
     background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgba(247, 100, 230, 0.4) 90%) no-repeat;
-}
 
+}
+.middle h1{
+    padding-top:30px;
+}
+.mid_top{
+    padding-top:40px;
+}
+/* About section */
+.port { 
+padding-top: 200px;}
 
 footer{
     height: 160px;
@@ -131,11 +140,12 @@ footer{
 }
 
 /* contact form */
-/* @media only screen and (max-width: 768px){
-    .contact, .contact_body {
-        width:100%;
-    } */
-/* } */
+@media only screen and (max-width: 768px){
+    .contact {
+        /* width: 100%; */
+        /* margin-left: 2%; */
+    } 
+}
     .btn.btn-block {
         border-radius: 10px;
         background-color: #9b71a5;
@@ -144,8 +154,11 @@ footer{
     .contact{
         border-radius: 3px;
         /* max-width: 40%; */
-        padding-top: 200px;
-        margin-left: 35%;   
+        padding-top: 100px;
+        margin-left: 34%;
+
+         
+        
     }
     .contact_body{
         width: 400px;
