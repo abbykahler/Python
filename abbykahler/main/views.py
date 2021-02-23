@@ -3,6 +3,7 @@ import random
 from datetime import datetime 
 
 
+
 def index(request):
     return render(request,'index.html')
 
@@ -19,7 +20,11 @@ def education(request):
     return render(request, 'education.html')
 
 def contact(request):
-    return render(request, 'contact.html')
+    form_class = ContactForm
+
+    return render(request, 'contact.html', {
+        'form': form_class,
+    })
 
 
 # def register(request):    
