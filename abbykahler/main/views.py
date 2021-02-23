@@ -9,6 +9,9 @@ def index(request):
 def ninjaman(request):
     return render(request, 'ninjaman.html')
 
+def airplane(request):
+    return render(request, 'airplane.html')
+
 def work(request):
     return render(request, 'work.html')
 

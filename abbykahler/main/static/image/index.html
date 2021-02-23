@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airplane Game</title>
+	<style type="text/css">
+		#world {
+			background-image: url(ocean.jpg);
+			width: 900px;
+			height: 700px;
+		}
+		.player {
+			background-image: url(player.png);
+			height: 90px;
+			width: 70px;
+			position: absolute;
+		}
+		.enemy {
+			background-image: url(enemy.png);
+			height: 70px;
+			width: 70px;
+			position: absolute;
+		}
+		.missle {
+			background-color: black;
+			height: 12px;
+			width: 5px;
+			border-radius: 50%;
+			position: absolute;
+		}
+
+		#lives, #score {
+*/			color: white;
+			font-size: 18px;
+			position: absolute;
+		}
+		#lives {
+			top: 20px;
+			left: 15px;
+		}
+		#score {
+			top: 50px;
+			left: 15px;
+		}
+		.gameover {
+*/			color: white;
+			font-size: 90px;
+			position: absolute;
+			top: 280px;
+			left: 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="world">
+		<div id="lives">Lives: 3</div>
+		<div id="score">Score: 0</div>
+		<div id="gameover"></div>
+		<div id="players"></div>
+		<div id="missles"></div>
+		<div id="enemies"></div>
+	</div>
+
+	<script type="text/javascript">
+	let player = {
+		left: 450,
+		top: 610,
+		moveLeft: function () {
+			if (this.left > 25) this.left -= 5;
+		},
+		moveRight: function () {
+			if (this.left < 825) this.left += 5;
+		},
+		update: function() {
+			if (Key.isDown(Key.left)) this.moveLeft();
+			if (Key.isDown(Key.right)) this.moveRight();
+		}
+	};
+	let lives = 3;
+	let score = 0;
+	let missles = [];
+	let enemies = [];
+
+	function spawnEnemies () {
+		enemies.push({top: 20, left: 50});
+		enemies.push({top: 20, left: 150});
+		enemies.push({top: 20, left: 250});
+		enemies.push({top: 20, left: 350});
+		enemies.push({top: 20, left: 450});
+		enemies.push({top: 20, left: 550});
+		enemies.push({top: 20, left: 650});
+		enemies.push({top: 20, left: 750});
+	}
+	spawnEnemies();
+
+	function drawPlayer () {
+		let content = `<div class='player' style='left:${player.left}px; top:${player.top}px'></div>`;
+		document.getElementById("players").innerHTML = content;
+	}
+	function drawEnemies () {
+		let content = "";
+		for (let i = 0; i < enemies.length; i++) {
+			let currentEnemy = enemies[i];
+			content += `<div class='enemy' style='left:${currentEnemy.left}px; top:${currentEnemy.top}px'></div>`;
+		}
+		document.getElementById("enemies").innerHTML = content;
+	}
+	document.onkeydown = (e) => {
+		if (e.keyCode === 32) {
+			let missle = {
+				left: player.left + 31,
+				top: player.top
+			}
+			missles.push(missle);
+		}
+	}
+	window.addEventListener('keyup', function(event) { Key.onKeyUp(event); }, false);
+	window.addEventListener('keydown', function(event) { Key.onKeyDown(event); }, false);
+	let Key = {
+		_pressed: {},
+		left: 37,
+		right: 39,
+		isDown: function (keyCode) {
+			return this._pressed[keyCode];
+		},
+		onKeyDown: function(event) {
+			this._pressed[event.keyCode] = true;
+		},
+		onKeyUp: function(event) {
+			this._pressed[event.keyCode] = false;
+		}
+	};
+	function moveEnemies() {
+		enemies.forEach(function (elem, idx) {
+			elem.top += 1;		
+			if (elem.top > 550) {
+				lives--;
+				enemies.splice(idx, 1);
+			};
+		});
+		if (enemies.length === 0) {
+			spawnEnemies();
+		}
+	};
+
+	function drawMissles () {
+		let content = "";
+
+		for (let i = 0; i < missles.length; i++) {
+			let currentMissle = missles[i];
+			content += `<div class='missle' style='left:${currentMissle.left}px; top:${currentMissle.top}px'></div>`;
+		}
+
+		document.getElementById("missles").innerHTML = content;	
+	}
+
+	function moveMissles() {
+		missles.forEach(function (elem, idx) {
+			elem.top -= 5;
+			
+			if (elem.top === 0) {
+				missles.splice(idx, 1);
+			}
+
+			enemies.forEach(function (target, jdx) {
+				if ((elem.top <= target.top) && (elem.left < target.left + 70) && (elem.left > target.left)) {
+					enemies.splice(jdx, 1);
+					missles.splice(idx, 1);
+					score += 10;
+				}
+			})
+		});
+	};
+
+	function gameLoop() {
+		moveEnemies();
+		drawEnemies();
+		player.update();
+		drawPlayer();
+		moveMissles();
+		drawMissles();
+
+		document.getElementById("lives").innerHTML = "Lives: " + lives;
+		document.getElementById("score").innerHTML = "Score: " + score;
+
+		if (lives <= 0) {
+			document.getElementById('gameover').innerHTML = "<div class = 'gameover'>GAME OVER</div>";
+			return;
+		}
+		setTimeout(gameLoop, 12);
+	}
+	gameLoop();
+	</script>
+</body>
+</html>

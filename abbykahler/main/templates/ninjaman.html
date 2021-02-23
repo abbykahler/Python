@@ -113,7 +113,7 @@
     <div id='pumpky'></div>
     <div id='red'></div>
     <div><h1>Score: <span id="score"></span>
-    <div><a href="/">About</a></div>
+    <div><a href="/">Home</a></div>
 </body>
 <script type="text/javascript">
     var world = [
@@ -207,7 +207,6 @@
         document.getElementById('pinky').style.left = pinky.x * 40 + 'px'
     }
     function checkMovement(){
-       
         for (var i = 0; i < ghosts.length; i++){
             var ghost = ghosts[i];
             if (world[ghost.y][ghost.x - 1] != 1 
