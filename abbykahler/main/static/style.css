@@ -24,7 +24,7 @@
     }
 }
 body {
-    /* background-color: rgb(0, 0, 0); */
+    background-color: black;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -101,7 +101,7 @@ footer{
 
 .lyon img, .mtsu img, .dojo img{    
     width: 100%;
-    height: 300px;
+    height: 420px;
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -143,6 +143,12 @@ footer{
 }
 .edu {
     background-color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.edu img{
+    width:80%;
+}
 }
 /* contact form */
 @media only screen and (max-width: 768px){
@@ -151,29 +157,67 @@ footer{
         /* margin-left: 2%; */
     } 
 }
-    .btn.btn-block {
-        border-radius: 10px;
-        background-color: #9b71a5;
-        color: rgb(235, 235, 235)
-    }
-    .contact{
-        border-radius: 3px;
-        /* max-width: 40%; */
-        padding-top: 100px;
-        margin-left: 34%;
+.btn.btn-block {
+    border-radius: 10px;
+    background-color: #9b71a5;
+    color: rgb(235, 235, 235)
+}
+.contact{
+    border-radius: 3px;
+    /* max-width: 40%; */
+    padding-top: 120px;
+    background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgb(223, 137, 182) 90%) no-repeat;
+    padding-left: 35%;
+    height: 800px;    
+}
+.contact_body{
+    width: 400px;
+    border: 1px solid #400485;
+    
+}
+.contact_body form{
+    padding-top: 30px;
+    /* width: 90%; */
+}
 
-         
-        
-    }
-    .contact_body{
-        width: 400px;
-        border: 1px solid #400485;
-    }
-    .contact_body form{
-        padding-top: 30px;
-        /* width: 90%; */
-    }
 
 
+
+
+
+
+/* Hover on Parent Container */
+/* .content_img:hover, .content_img2:hover, .content_img3:hover{
+cursor: pointer;
+
+} */
+
+/* .content_img:hover div{
+width: 170px;
+padding: 8px 15px;
+visibility: visible;
+opacity: 0.7; 
+
+} */
+.logo_lang {
+    display: flex;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    justify-content: space-between;
+
+
+    
+}
+.logo_lang img{
+    height: 75px;
+    width: 75px;
+}
+.lang h1{
+    color: white;
+    padding-top: 30px;
+}
     
 /* / contact form */
