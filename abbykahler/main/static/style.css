@@ -214,3 +214,7 @@ footer{
 .project {
     padding-bottom: 20px;
 }
+.work1, .work2, .work3{
+    color: white;
+    border-style: solid;
+}
