@@ -214,6 +214,7 @@ footer{
 .page_top h1{
     font-size: 75px;
     color:white;
+    padding-bottom: 20px;
 
 }
 .work1 h3{
@@ -223,21 +224,32 @@ footer{
     color: white;
     border-style: solid;
     border: width 1px;
+    width:60%;
+    height:60%;
+    margin-left: 20%;
+    padding-top: 25px;
+    padding-bottom: 20px;
     
 
 }
 .work1 ul, .work2 ul, .work3 ul{
     list-style-type:square;
     list-style-position: inside;
+    text-align: left;
+    padding-top: 15px;
 
 }
-.work1{
-    width:60%;
+
+.work_body{
+    padding-bottom: 20px;
 }
-.work2{
-    width:60%;
-    
+.work1 h5, .work2 h5, .work3 h5{
+    padding-top: 10px;
 }
-.work3{
-    width:60%;
+.work2 h5 {
+    padding-top:15px;
+}
+
+.home_button div{
+font: 200px;
 }
