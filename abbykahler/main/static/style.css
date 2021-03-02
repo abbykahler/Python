@@ -204,8 +204,10 @@ footer{
 }
 
 .port_button{
-    display: inline-block;
+    display: flex;
     max-width: 800px;
+    justify-content: space-between;
+    padding-left: 50;
     
 }
 .project {
@@ -218,9 +220,9 @@ footer{
     padding-bottom: 20px;
 
 }
-.project{
-    display: flex;
-}
+
+
+
 .work1 h3{
     font-size: 55px;
 }
