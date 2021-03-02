@@ -218,6 +218,9 @@ footer{
     padding-bottom: 20px;
 
 }
+.project{
+    display: flex;
+}
 .work1 h3{
     font-size: 55px;
 }
