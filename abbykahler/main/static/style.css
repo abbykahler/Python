@@ -166,16 +166,18 @@ footer{
     /* max-width: 40%; */
     padding-top: 120px;
     background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgb(223, 137, 182) 90%) no-repeat;
-    padding-left: 35%;
+    padding-left: 38%;
     height: 800px;    
 }
 .contact_body{
-    width: 400px;
+    width: 440px;
     border: 1px solid #400485;
     
 }
 .contact_body form{
-    padding-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* padding-left: 20px; */
     /* width: 90%; */
 }
 
