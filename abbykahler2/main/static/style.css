@@ -343,14 +343,18 @@ body {
 .about_bottom h1{
     font-size: 50px;
     color:white;
-    /* padding-bottom: 20px; */
     text-align: center;
+    padding-top: 20px;
 } 
 /* ////////////////////////////////// about end */
 
 
-/* //////////////////////////////////PROJECTS */
+/* //////////////////////////////////PORTFOLIO */
 
+.portfolio h1{
+    color:white;
+    text-align: center;
+}
 
 
 /* .port_button button{
