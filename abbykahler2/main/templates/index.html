@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css' %}"> 
+    <style>
+        .parallax {
+        background-image: url("static/img_parallax.jpg");
+        min-height: 600px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        body {
+        height: 100%;
+        }
+        .parallax3 {
+        background-image: url("static/image/edupara.jpg");
+        min-height: 200px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .parallax2 {
+        background-image: url("static/image/workpara.jpg");
+        min-height: 270px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .parallax4 {
+        background-image: url("static/image/contactpara.jpg");
+        min-height: 250px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    </style>
+    <script>
+    
+    </script>
+    {% comment %} <script>
+    </script> {% endcomment %}
+    </head>
+    <body>
+{% comment %} nav bar {% endcomment %}
+        <header>
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="#" class="logo">Abby Kahler</a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="#portfolio" class="nav-links">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="nav-links">Work</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="nav-links">Education</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
+
+{% comment %} ABOUT PAGE {% endcomment %}
+        <div class="about">
+            <div class="about_top">
+                <h3>Hi! My name is Abby and welcome to my page.</h3>
+                <h3>Continue to learn more about me</h3>
+            </div>
+            <div class="parallax"></div>
+        </div>
+
+{% comment %}  PORTFOLIO  {% endcomment %}
+        <div style="height:1000px;background-color:black;font-size:36px">
+            <h1><a id="portfolio"></a></h1>
+                <div class="about_bottom">
+                    <h1>Check out a few of my projects</h1>
+                </div>
+        </div>
+                        {% comment %} <div class="port">
+                            <div class="projects">
+                                <div class="port_button">
+                                    <div class="project">
+                                        <img src="static/image/ninjaman.png" alt="NinjaMan">
+                                        <div class="myButton">
+                                            <a href="/ninjaman">
+                                            <button class="btn">Ninja Man</button>
+                                            </a>
+                                        </div>
+                                    
+                                    
+
+                                        <div class="project2">
+                                            <img src="static/image/airplane.png" alt="Airplane">
+                                            <div class="myButton">
+                                                <a href="/airplane">
+                                                <button class="btn">Airplane</button>
+                                                </a>
+                                        </div>
+                                    
+
+                                    
+                                    </div>
+
+                                
+                                </div>
+                            </div>
+                        </div>
+
+                         {% endcomment %}
+                        {% comment %} <div class="lang">
+                            <h1>Languages Used</h1>
+                        
+                        <div class="logo_lang">
+                            <div class="content_img">
+                                <img src='static/image/python.png'>
+                                <div>Python</div>
+                            </div>
+                            <div class="content_img2">
+                                <img src='static/image/django-logo.png'>
+                                <div>Django</div>
+                            </div>
+                            <div class="content_img3">
+                                <img src='static/image/react.png'>
+                                <div>React</div>
+                            </div>
+                            <div class="content_img4">
+                                <img src='static/image/java.png'>
+                                <div>Java</div>
+                            </div>
+                            <div class="content_img5">
+                                <img src='static/image/js.png' >
+                                <div>JavaScript</div>
+                            </div>
+                            <div class="content_img6">
+                                <img src='static/image/html.png'>
+                                <div>HTML</div>
+                            </div>
+                            <div class="content_img7">
+                                <img src='static/image/css.png' >
+                                <div>CSS</div>
+                            </div>
+                            <div class="content_img8">
+                                <img src='static/image/mongo.png'>
+                                <div>MongoDB</div>
+                            </div>
+                            <div class="content_img9">
+                                <img src='static/image/mysql.png'>
+                                <div>MySQL</div>
+                            </div>
+                            <div class="content_img10">
+                                <img src='static/image/jquery.png'>
+                                <div>JQuery</div>
+                            </div>
+                            <div class="content_img11">
+                                <img src='static/image/swift.png'>
+                                <div>Swift</div>
+                            </div>
+                    </div>
+                </div>
+             {% endcomment %} 
+            {% comment %} <div class="parallax2"></div>
+            <div style="height:100%;background-color:black">
+                <h1><a id="work"></a></h1>
+                <div class="page_top">
+                    <h1>Work History</h1>
+                </div>
+                <div class="work_body">
+                    <div class="work1">
+                        <h3>Post Production Film</h3>
+                        <h5>2005-2011 </h5>
+                        <ul>
+                            <li>Various studios like Warner Brothers, Sony, Universal, and Paramount</li>
+                            <li>Managed multiple projects at once with short deadlines.</li>
+                            <li>Sound fx editor and foley artist on more than 60 feature films</li>
+                        </ul> 
+                    </div><br>
+
+                    <div class="work2">
+                        <a href="verizonwireless.com"><img src="static/image/verizon.webp" alt="verizon_logo" style="width:250px;height:50px;"></a>
+                        <h5> Sales Rep 2011-2013 </h5>
+                        <ul> 
+                            <li>Provide tech support and quick fixes for customers, directly impacting their experience</li>
+                            <li>Responsible for meeting and exceeding monthly quota</li>
+                        </ul> 
+                    </div><br>
+
+                    <div class="work3">
+                        <a href=""><img src="static/image/cinebags.jpg" alt="cinebags_logo" style="width:100px;height:100px;"></a>
+                        <h5> Director of Business Devolopment 2013-2020 </h5>
+                            <ul>
+                                <li>Sales, Dealer and Customer Relations</li>
+                                <li>Overseeing warehouse to ensure shipments go out on schedule</li>
+                                <li>Social media manager responible for the company Instagram and building 52k followers</li>
+                                <li>Managing on-site technology and troubleshooting any problems for all staff</li>
+                            </ul> 
+                    </div><br>
+                </div>
+            </div>
+        
+            <div class="parallax3"></div> {% endcomment %}
+                {% comment %} <div style>
+                    <h1><a id="education"></a></h1>
+                    <div class="edu">
+                        <div class="page_top">
+                            <h1>Education</h1>
+                        </div>
+                        <div class="lyon">
+                            <img src="static/image/lyon.jpg" alt="Lyon College"> 
+                            <a href="http://lyon.edu/">
+                            <button class="btn">Lyon College</button>
+                            </a>
+                            <p>Attended: 1999-2001</p>
+                        </div>
+
+                        <div class="mtsu">
+                            <img src="static/image/mtsu.jpg" alt="MTSU">
+                            <a href="http://mtsu.edu">
+                            <button class="btn">Middle Tennessee State University</button>
+                            </a> 
+                            <p>Attended: 2001-2005 Graduated: BS</p>
+                        </div>
+                        
+                        <div class="dojo">
+                            <img src="static/image/codingdojo.jpg" alt="Coding Dojo">
+                            <a href="http://codingdojo.com/">
+                            <button class="btn">Coding Dojo</button>
+                            </a> 
+                            <p>Attended: 2020-2021 Graduated: Certificate</p>
+                            </div>
+                    </div> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+            
+    {% comment %} </div> {% endcomment %}
+            {% comment %} <div class="parallax4"></div>
+            <div style="font-size:36px">
+            <div class='contact'>
+                <div class='contact_body'>
+                    <form>
+                        <h1><a id="contact"></a>Contact Moi</h1> {% endcomment %}
+
+                        {% comment %} <h3>Abby Kahler</h3>
+                        <h3>abbykahler1@gmail.com</h3>
+                        <h3></h3> {% endcomment %}
+                        {% comment %} <label for="contact_name"></label>
+                        <input type="text" placeholder="Name"name='contact_name' id="contact_name"><br>
+                        
+                        <label for="contact_email"></label>
+                        <input type="email" name='contact_email' placeholder="Email"id="contact_email"><br> {% endcomment %}
+{% comment %} 
+                        <label for="content"></label> 
+                        <input type="text" "name='content' id="content" {% 
+                        <textarea name="plan" cols="30" rows="10" id="plan" placeholder="Tell me more"></textarea><br>
+                        <button class="btn btn-block text-center my-3">Message Me!</button><br>  
+                </div>
+        
+    </div>    </div>
+        </div> {% endcomment %}
+        {% comment %} <footer>
+            <div class="bottom">  {% endcomment %}
+                {% comment %} <a href="/contact">Contact</a><br>
+                div class="logo">
+                    <a href="https://www.linkedin.com/in/michael-brown-7ba25016/">
+                    <img border="0" alt="linkedin" src="static/linkedin.png" width="60" height="60"></a>
+                    <a href="https://github.com/abbykahler">
+                    <img border="0" alt="github" src="static/github.png" width="60" height="60"></a>
+                    <a href="https://www.facebook.com/Abbykahler10/">
+                    <img border="0" alt="facebook" src="static/facebook.png" width="60" height="60"></a>
+                </div>
+                <p>©2021 AbbyKahler</p>
+            </div>
+        </footer> {% endcomment %}
+    </body> 
+</html>

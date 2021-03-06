@@ -1,0 +1,382 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Verdana;   
+}
+@media only screen and ( max-width: 576px ) {
+    .footer, .lg-1{
+        display: none;
+    }
+}
+@media only screen and ( min-width: 768px ) {
+    .sm-4, .lg-1 {
+        display: none;
+    }
+}
+@media only screen and ( min-width: 992px) {
+    .lg-1 , contact, .body{
+        display: block;
+    }
+    .sm-4, .med-2 {
+        display: none;
+    }
+}
+body {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* HEADER */
+/* 
+header * {
+    display: flex;
+    padding-top: 5px;
+}
+header li {
+    margin: 20px;
+}
+header li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+header h1{
+    font-size:19px;
+    padding-top: 5px;
+}
+.menu{
+    padding-left: 50%;
+} */
+
+/* HEADER END*/
+
+
+/* footer{
+    height: 160px;
+    background: white;
+}
+.bottom{
+    padding-top: 20px;
+} */ */
+
+/* education */
+/* .lyon, .mtsu,  .dojo {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* padding-bottom: 50px; */
+/* }
+
+.lyon img, .mtsu img, .dojo img{    
+    width: 100%;
+    height: 420px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+} */ */
+
+/* .lyon .btn, .mtsu .btn, .dojo .btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* -ms-transform: translate(-50%, -50%); */
+    /* background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.lyon .btn:hover , .mtsu .btn:hover, .dojo .btn:hover{
+    background-color: black;
+}
+.lyon, .mtsu, .dojo {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-top: -5px;
+}
+
+.edu p {
+    color: white;
+} */
+/* education */
+/* .port img {
+    width: 300px;
+    height:300px;
+}
+.edu {
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.edu img{
+    width:80%;
+} */
+
+/* contact form */
+/* @media only screen and (max-width: 768px){
+    .contact { */
+        /* width: 100%; */
+        /* margin-left: 2%; */
+    /* } 
+}
+.btn.btn-block {
+    border-radius: 10px;
+    background-color: #9b71a5;
+    color: rgb(235, 235, 235)
+}
+.contact{
+    border-radius: 3px; */
+    /* max-width: 40%; */
+    /* padding-top: 120px;
+    background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgb(223, 137, 182) 90%) no-repeat;
+    padding-left: 38%;
+    height: 800px;    
+}
+.contact_body{
+    width: 440px;
+    border: 1px solid #400485;
+    
+}
+.contact_body form{
+    padding-top: 10px;
+    padding-bottom: 20px; */
+    /* padding-left: 20px; */
+    /* width: 90%; */
+/* } */
+
+/* 
+.logo_lang {
+    display: flex;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    justify-content: space-between;
+    width:100%;
+
+}
+.logo_lang img{
+    height: 75px;
+    width: 75px;
+}
+.lang h1{
+    color: white;
+    padding-top: 30px;
+} */
+    
+/* / contact form */
+
+
+
+/* .work1 h3{
+    font-size: 55px;
+}
+.work1, .work2, .work3{
+    color: white;
+    border-style: solid;
+    border: width 1px;
+    width:60%;
+    height:60%;
+    margin-left: 20%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+
+}
+.work1 ul, .work2 ul, .work3 ul{
+    list-style-type:square;
+    list-style-position: inside;
+    text-align: left;
+    padding-top: 15px;
+
+}
+
+.work_body{
+    padding-bottom: 20px;
+}
+.work1 h5, .work2 h5, .work3 h5{
+    padding-top: 10px;
+}
+.work2 h5 {
+    padding-top:15px;
+}
+
+.home_button div{
+font: 200px;
+} */ */ */
+
+
+
+
+
+
+/* //////////////////////////////////header  */
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color:black;
+    padding-bottom: 10px;
+    position:fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    padding-left: 20px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links, .logo {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(207, 119, 208, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 350px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+        padding-top: 13px;;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgb(248,178,253);
+    }
+}
+
+/* ////////////////////////////////// header end */
+
+/* ////////////////////////////////// about page */
+.about{
+    background: rgb(248,178,253);
+    padding-top: 60px;
+
+} 
+.about h3{
+    text-align: center;
+}
+.about_top{
+    padding-top:30px;
+    padding-bottom: 10px;
+
+} 
+
+.about_bottom h1{
+    font-size: 50px;
+    color:white;
+    /* padding-bottom: 20px; */
+    text-align: center;
+} 
+/* ////////////////////////////////// about end */
+
+
+/* //////////////////////////////////PROJECTS */
+
+
+
+/* .port_button button{
+    background-color:rgb(183, 142, 142);
+} */
+
+/* .port_button{ */
+    /* display: flex; */
+    /* max-width: 800px; */
+    /* justify-content: space-between; */
+    
+/* } */
+/* .project{
+    padding-bottom: 20px;
+}
+
+.page_top h1{
+    font-size: 75px;
+    color:white;
+    padding-bottom: 20px;
+
+} */
+
+/* .projects{
+    display: inline-block;
+} */
+
+
+/* //////////////////////////////////PROJECTS END*/
