@@ -1,18 +1,20 @@
-/* * {
+ /* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 18px;
     font-family: Verdana;   
-}
+} */
 @media only screen and ( max-width: 576px ) {
-    .footer, .lg-1{
+    .main-nav li,.footer, .lg-1{
         display: none;
+        
     }
 }
 @media only screen and ( min-width: 768px ) {
     .sm-4, .lg-1 {
         display: none;
+        width: 100%;
     }
 }
 @media only screen and ( min-width: 992px) {
@@ -23,13 +25,13 @@
         display: none;
     }
 }
-body {
+/* body {
     background-color: black;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding-top: 15px;
-}
+} */
 
 
 .home_button div{
@@ -217,7 +219,7 @@ body {
     padding-left: 15%;
     /* padding-right: 50px; */
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 12px;
     justify-content: space-between;
     width:85%;
     text-align: center;
@@ -234,7 +236,10 @@ body {
 .logo_lang div {
     font-size: 18px;
 }
-
+.lang{
+    padding-top: 20px;
+    
+}
 .home_button .btn{
     background-color: rgb(171, 150, 150);
 }
@@ -381,10 +386,7 @@ body {
     height:70%;
     margin-left: 20%;
     margin-top:5%
-    
-    
-    
-    
+
 }
 .contact_body form{
     padding-top: 10px;
@@ -394,16 +396,12 @@ body {
     
 }
 
-    /* padding-left: 20px; */
-    /* width: 90%; 
-
-    
-
 
 /* /////////////FOOTER */
 
 footer{
     height: 180px;
+    background-color:white
 }
 .bottom{
     padding-top: 20px;
@@ -412,4 +410,22 @@ footer{
 .bottom p{
     padding-top:5px;
     padding-bottom:10px;
+}
+
+
+/* ////////////////// TRIP PAGE */
+.trip_body{
+    background:black;
+    height: 100%;
+    text-align: center;
+    color:white;
+    font-size: 24px;
+}
+.trip_body img{
+    width: 55%;
+    height:40%;
+    padding-top: 10px;
+}
+.trip_body p{
+    padding-top:20px;
 }

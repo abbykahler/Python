@@ -28,3 +28,5 @@ def contact(request):
         # 'form': form_class,
     })
 
+def trip(request):
+    return render(request, 'trip.html')

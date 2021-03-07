@@ -15,7 +15,8 @@
     <div class="logout">
             <a href="/logout">Logout</a>
         <div>
-        <h1>Hello {{current_user.first_name}}</h1>
+        {% csrf_token %}
+        <h1>Hello {{ current_user.first_name }}</h1>
         <h2>Your trips</h2>
         <table>
             <tr>
