@@ -55,145 +55,6 @@ header h1{
 /* HEADER END*/
 
 
-/* footer{
-    height: 160px;
-    background: white;
-}
-.bottom{
-    padding-top: 20px;
-} */ */
-
-/* education */
-/* .lyon, .mtsu,  .dojo {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    /* padding-bottom: 50px; */
-/* }
-
-.lyon img, .mtsu img, .dojo img{    
-    width: 100%;
-    height: 420px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-} */ */
-
-/* .lyon .btn, .mtsu .btn, .dojo .btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* -ms-transform: translate(-50%, -50%); */
-    /* background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.lyon .btn:hover , .mtsu .btn:hover, .dojo .btn:hover{
-    background-color: black;
-}
-.lyon, .mtsu, .dojo {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    padding-top: -5px;
-}
-
-.edu p {
-    color: white;
-} */
-/* education */
-/* .port img {
-    width: 300px;
-    height:300px;
-}
-.edu {
-    background-color: black;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.edu img{
-    width:80%;
-} */
-
-/* contact form */
-/* @media only screen and (max-width: 768px){
-    .contact { */
-        /* width: 100%; */
-        /* margin-left: 2%; */
-    /* } 
-}
-.btn.btn-block {
-    border-radius: 10px;
-    background-color: #9b71a5;
-    color: rgb(235, 235, 235)
-}
-.contact{
-    border-radius: 3px; */
-    /* max-width: 40%; */
-    /* padding-top: 120px;
-    background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgb(223, 137, 182) 90%) no-repeat;
-    padding-left: 38%;
-    height: 800px;    
-}
-.contact_body{
-    width: 440px;
-    border: 1px solid #400485;
-    
-}
-.contact_body form{
-    padding-top: 10px;
-    padding-bottom: 20px; */
-    /* padding-left: 20px; */
-    /* width: 90%; */
-/* } */
-
-/* 
-
-    
-/* / contact form */
-
-
-
-/* .work1 h3{
-    font-size: 55px;
-}
-.work1, .work2, .work3{
-    color: white;
-    border-style: solid;
-    border: width 1px;
-    width:60%;
-    height:60%;
-    margin-left: 20%;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    
-
-}
-.work1 ul, .work2 ul, .work3 ul{
-    list-style-type:square;
-    list-style-position: inside;
-    text-align: left;
-    padding-top: 15px;
-
-}
-
-.work_body{
-    padding-bottom: 20px;
-}
-.work1 h5, .work2 h5, .work3 h5{
-    padding-top: 10px;
-}
-.work2 h5 {
-    padding-top:15px;
-}
-
 .home_button div{
 font: 200px;
 } */ */ */
@@ -204,7 +65,7 @@ font: 200px;
 
 
 /* //////////////////////////////////header  */
-{
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -397,6 +258,161 @@ body {
     font-size: 18px;
 }
 
-
-
 /* //////////////////////////////////PROJECTS END*/
+
+
+/* ////////////////////////////////// WORK */
+.work1 h3{
+    font-size: 55px;
+}
+.work1, .work2, .work3{
+    color: white;
+    border-style: solid;
+    border: width 1px;
+    width:60%;
+    height:60%;
+    margin-left: 20%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+}
+.work1 ul, .work2 ul, .work3 ul{
+    list-style-type:square;
+    list-style-position: inside;
+    text-align: left;
+    padding-top: 15px;
+
+}
+
+.work_body{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.work1 h5, .work2 h5, .work3 h5{
+    padding-top: 10px;
+}
+.work2 h5 {
+    padding-top:15px;
+}
+.work_top h1{
+    text-align:center;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+/* ////////////////////////////////// EDUCATION */
+.edu p {
+    color: white;
+    text-align: center;
+    /* padding-top: 12px; */
+}
+.edu img {
+    width: 65%;
+    height:20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edu_top h1{
+    text-align: center;
+    color: white;
+    font-size: 55px;
+}
+
+/* .lyon, .mtsu, .dojo {
+    width: 100%;
+    max-width: 100%;
+    padding-top: -5px;
+} */
+
+.edu {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.schools .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(42, 35, 114);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.lyon .btn:hover , .mtsu .btn:hover, .dojo .btn:hover{
+    background-color: rgb(169, 157, 157);
+}
+.btn.btn-block {
+    border-radius: 10px;
+    background-color: #9b71a5;
+    color: rgb(235, 235, 235)
+}
+
+.lyon, .mtsu,  .dojo {
+    /* position: absolute; */
+    width: 100%;
+    max-width: 100%;
+    /* padding-bottom: 50px; */
+}
+
+.lyon img, .mtsu img, .dojo img{    
+    width: 100%;
+    height: 420px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+/* /////////////CONTACT */
+
+@media only screen and (max-width: 768px){
+    .contact {
+        /* width: 100%; */
+        margin-left: 2%; 
+    } 
+}
+
+.contact{
+    border-radius: 3px;
+    padding-top: 120px;
+    background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgb(223, 137, 182) 90%) no-repeat;
+    padding-left: 38%;
+    height: 800px;    
+}
+.contact_body{
+    width: 440px;
+    border: 1px solid #400485;
+    
+}
+.contact_body form{
+    padding-top: 10px;
+    padding-bottom: 20px;
+ } */
+    /* padding-left: 20px; */
+    /* width: 90%; 
+
+    
+
+
+/* /////////////FOOTER */
+
+footer{
+    height: 180px;
+}
+.bottom{
+    padding-top: 20px;
+    text-align: center;
+}
+.bottom p{
+    padding-top:5px;
+    padding-bottom:10px;
+}
