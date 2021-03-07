@@ -155,25 +155,7 @@ header h1{
 /* } */
 
 /* 
-.logo_lang {
-    display: flex;
-    color: white;
-    padding-left: 50px;
-    padding-right: 50px;;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    justify-content: space-between;
-    width:100%;
 
-}
-.logo_lang img{
-    height: 75px;
-    width: 75px;
-}
-.lang h1{
-    color: white;
-    padding-top: 30px;
-} */
     
 /* / contact form */
 
@@ -354,6 +336,7 @@ body {
 .portfolio h1{
     color:white;
     text-align: center;
+    padding-top: 25px;
 }
 
 
@@ -377,10 +360,43 @@ body {
     padding-bottom: 20px;
 
 } */
+.projects{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+.projects img{
+    height: 350px;
+    width: 350px;
+}
 
-/* .projects{
-    display: inline-block;
-} */
+.logo_lang {
+    display: flex;
+    color: white;
+    padding-left: 15%;
+    /* padding-right: 50px; */
+    padding-bottom: 50px;
+    padding-top: 50px;
+    justify-content: space-between;
+    width:85%;
+    text-align: center;
+    
+
+
+}
+.logo_lang img{
+    height: 55px;
+    width: 55px;
+}
+.lang h1{
+    color: white;
+    padding-top: 30px;
+}
+.logo_lang div {
+    font-size: 18px;
+}
+
 
 
 /* //////////////////////////////////PROJECTS END*/
