@@ -25,7 +25,7 @@
         }
         .parallax3 {
         background-image: url("static/image/edupara.jpg");
-        min-height: 200px; 
+        min-height: 400px; 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -33,7 +33,7 @@
         }
         .parallax2 {
         background-image: url("static/image/workpara.jpg");
-        min-height: 270px; 
+        min-height: 400px; 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -41,7 +41,7 @@
         }
         .parallax4 {
         background-image: url("static/image/contactpara.jpg");
-        min-height: 250px; 
+        min-height: 400px; 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -86,13 +86,12 @@
 
 {% comment %} PORTFOLIO  {% endcomment %}
         <div class="portfolio">
-            <div style="height:100%%;background-color:black;font-size:36px">
+            <div style="height:100%;background-color:black">
                 <h1><a id="portfolio">Check out a few of my projects</a></h1>
             
-
                 <div class="projects">
                     <div class="project1">
-                        <img src="static/image/ninjaman.png" alt="NinjaMan">
+                        <img src="static/image/ninjaman.png";alt="NinjaMan">
                             <div class="myButton">
                                 <a href="/ninjaman">
                                 <button class="btn">Ninja Man</button>
@@ -107,6 +106,7 @@
                                 </a>
                             </div> 
                     </div>
+                
                 </div>
 
                 <div class="lang">
@@ -172,41 +172,43 @@
 
 {% comment %} WORK PAGE {% endcomment %}
         <div class="parallax2"></div>
-        <div style="height:100%;background-color:black">
-            <h1><a id="work"></a></h1>
-            <div class="work_top">
-                <h1>Work History</h1>
-            </div>
-            <div class="work_body">
-                <div class="work1">
-                    <h3>Post Production Film</h3>
-                    <h5>2005-2011 </h5>
-                    <ul>
-                        <li>Various studios like Warner Brothers, Sony, Universal, and Paramount</li>
-                        <li>Managed multiple projects at once with short deadlines.</li>
-                        <li>Sound fx editor and foley artist on more than 60 feature films</li>
-                    </ul> 
-                </div><br>
-
-                <div class="work2">
-                    <a href="verizonwireless.com"><img src="static/image/verizon.webp" alt="verizon_logo" style="width:250px;height:50px;"></a>
-                    <h5> Sales Rep 2011-2013 </h5>
-                    <ul> 
-                        <li>Provide tech support and quick fixes for customers, directly impacting their experience</li>
-                        <li>Responsible for meeting and exceeding monthly quota</li>
-                    </ul> 
-                </div><br>
-
-                <div class="work3">
-                    <a href=""><img src="static/image/cinebags.jpg" alt="cinebags_logo" style="width:100px;height:100px;"></a>
-                    <h5> Director of Business Devolopment 2013-2020 </h5>
+        <div class="work_page">
+            <div style="height:100%;">
+                <h1><a id="work"></a></h1>
+                <div class="work_top">
+                    <h1>Work History</h1>
+                </div>
+                <div class="work_body">
+                    <div class="work1">
+                        <h3>Post Production Film</h3>
+                        <h5>2005-2011 </h5>
                         <ul>
-                            <li>Sales, Dealer and Customer Relations</li>
-                            <li>Overseeing warehouse to ensure shipments go out on schedule</li>
-                            <li>Social media manager responible for the company Instagram and building 52k followers</li>
-                            <li>Managing on-site technology and troubleshooting any problems for all staff</li>
+                            <li>Various studios like Warner Brothers, Sony, Universal, and Paramount</li>
+                            <li>Managed multiple projects at once with short deadlines.</li>
+                            <li>Sound fx editor and foley artist on more than 60 feature films</li>
                         </ul> 
-                </div><br>
+                    </div><br>
+
+                    <div class="work2">
+                        <a href="verizonwireless.com"><img src="static/image/verizon.webp" alt="verizon_logo" style="width:250px;height:50px;"></a>
+                        <h5> Sales Rep 2011-2013 </h5>
+                        <ul> 
+                            <li>Provide tech support and quick fixes for customers, directly impacting their experience</li>
+                            <li>Responsible for meeting and exceeding monthly quota</li>
+                        </ul> 
+                    </div><br>
+
+                    <div class="work3">
+                        <a href=""><img src="static/image/cinebags.jpg" alt="cinebags_logo" style="width:100px;height:100px;"></a>
+                        <h5> Director of Business Devolopment 2013-2020 </h5>
+                            <ul>
+                                <li>Sales, Dealer and Customer Relations</li>
+                                <li>Overseeing warehouse to ensure shipments go out on schedule</li>
+                                <li>Social media manager responible for the company Instagram and building 52k followers</li>
+                                <li>Managing on-site technology and troubleshooting any problems for all staff</li>
+                            </ul> 
+                    </div><br>
+                </div>
             </div>
         </div>
 
@@ -244,10 +246,7 @@
         </div>
                 
                 
-{% comment %} CONTACT {% endcomment %}                
-                
-            
-    {% comment %} </div> {% endcomment %}
+{% comment %} CONTACT {% endcomment %}                  
         <div class="parallax4"></div>
         <div style="font-size:36px">
             <div class='contact'>

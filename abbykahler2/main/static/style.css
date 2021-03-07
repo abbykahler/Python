@@ -31,33 +31,10 @@ body {
     padding-top: 15px;
 }
 
-/* HEADER */
-/* 
-header * {
-    display: flex;
-    padding-top: 5px;
-}
-header li {
-    margin: 20px;
-}
-header li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-header h1{
-    font-size:19px;
-    padding-top: 5px;
-}
-.menu{
-    padding-left: 50%;
-} */
-
-/* HEADER END*/
-
 
 .home_button div{
 font: 200px;
-} */ */ */
+}
 
 
 
@@ -110,7 +87,7 @@ body {
 .logo {
     display: inline-block;
     font-size: 22px;
-    margin-top: 10px;
+    margin-top: 3px;
     margin-left: 20px;
 }
 
@@ -152,13 +129,7 @@ body {
         margin-left: 40px;
     }
 
-    .logo {
-        margin-top: 0;
-    }
 
-    .navbar-toggle {
-        display: none;
-    }
 
     .logo:hover,
     .nav-links:hover {
@@ -200,32 +171,36 @@ body {
     padding-top: 25px;
 }
 
+.project2{
+    padding-left: 22px;
+}
+.projects button{
+    background-color:rgb(212, 202, 218);
+    font-size:22px;
+    
 
-/* .port_button button{
-    background-color:rgb(183, 142, 142);
-} */
+}
 
+.myButton{
+    padding-top:15px;
+}
 /* .port_button{ */
     /* display: flex; */
     /* max-width: 800px; */
     /* justify-content: space-between; */
     
-/* } */
+/* }
 /* .project{
     padding-bottom: 20px;
 }
 
-.page_top h1{
-    font-size: 75px;
-    color:white;
-    padding-bottom: 20px;
+ */
 
-} */
 .projects{
     display: flex;
     padding-left: 30px;
     padding-top: 20px;
-    text-align: center;
+    text-align: center;   
 }
 .projects img{
     height: 350px;
@@ -243,8 +218,6 @@ body {
     width:85%;
     text-align: center;
     
-
-
 }
 .logo_lang img{
     height: 55px;
@@ -258,6 +231,9 @@ body {
     font-size: 18px;
 }
 
+.home_button .btn{
+    background-color: rgb(171, 150, 150);
+}
 /* //////////////////////////////////PROJECTS END*/
 
 
@@ -283,10 +259,14 @@ body {
     padding-top: 15px;
 
 }
-
+.work_page{
+    background-color: black;
+    padding-top: 10px;
+}
 .work_body{
     padding-bottom: 20px;
     text-align: center;
+    
 }
 .work1 h5, .work2 h5, .work3 h5{
     padding-top: 10px;
@@ -297,7 +277,7 @@ body {
 .work_top h1{
     text-align:center;
     color: white;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     padding-bottom: 20px;
     font-size: 60px;
 }
@@ -396,7 +376,7 @@ body {
 .contact_body form{
     padding-top: 10px;
     padding-bottom: 20px;
- } */
+}
     /* padding-left: 20px; */
     /* width: 90%; 
 
