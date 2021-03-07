@@ -52,6 +52,7 @@
         #score {
 		    width: 40px;
 			display: inline-block;
+
         }
         #pinky {
             background-color: black;
@@ -100,14 +101,7 @@
         h1{
             padding-left: 200px;
         }
-        .home_button .btn{
-            background-color: white;
-            margin-left:217px;
-            padding: 5px;
-            font-size:25px;
-            border-radius: 5px;
-    
-        }
+
     </style>
 </head>
 
@@ -118,11 +112,11 @@
     <div id='pinky'></div>
     <div id='pumpky'></div>
     <div id='red'></div>
+    <div><h1>Score: <span id="score"></span>
     <div class="home_button">
         <a href="/">
         <button class="btn">Home</button>
         </a>
-    </div>
 </body>
 <script type="text/javascript">
     var world = [
@@ -216,6 +210,7 @@
         document.getElementById('pinky').style.left = pinky.x * 40 + 'px'
     }
     function checkMovement(){
+       
         for (var i = 0; i < ghosts.length; i++){
             var ghost = ghosts[i];
             if (world[ghost.y][ghost.x - 1] != 1 
