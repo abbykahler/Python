@@ -180,7 +180,10 @@ body {
     
 
 }
-
+.row1 {
+    display: flex;
+    
+}
 .myButton{
     padding-top:15px;
 }
@@ -198,9 +201,10 @@ body {
 
 .projects{
     display: flex;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 20px;
-    text-align: center;   
+    text-align: center;
+    margin-left: 8%;   
 }
 .projects img{
     height: 350px;
@@ -365,18 +369,31 @@ body {
     border-radius: 3px;
     padding-top: 120px;
     background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgb(223, 137, 182) 90%) no-repeat;
-    padding-left: 38%;
-    height: 800px;    
+    height: 800px;
+    text-align: center; 
+    
 }
 .contact_body{
     width: 440px;
     border: 1px solid #400485;
+    padding-top:30px;
+    width:60%;
+    height:70%;
+    margin-left: 20%;
+    margin-top:5%
+    
+    
+    
     
 }
 .contact_body form{
     padding-top: 10px;
     padding-bottom: 20px;
+    
+    
+    
 }
+
     /* padding-left: 20px; */
     /* width: 90%; 
 
