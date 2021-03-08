@@ -382,7 +382,7 @@ body {
 .contact_body{
     width: 440px;
     border: 1px solid #400485;
-    padding-top:70px;
+    padding-top:50px;
     width:60%;
     height:70%;
     margin-left: 20%;
@@ -396,7 +396,7 @@ body {
     
     
 }
-.env img, form h2{
+.env img, form h2, form h1{
     padding-top:20px;
 
 }
@@ -405,11 +405,11 @@ body {
 /* /////////////FOOTER */
 
 footer{
-    height: 180px;
+    height: 150px;
     background-color:white
 }
 .bottom{
-    padding-top: 20px;
+    padding-top: 35px;
     text-align: center;
 }
 .bottom p{
