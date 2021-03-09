@@ -7,9 +7,16 @@
 } */
 @media only screen and ( max-width: 576px ) {
     .main-nav li,.footer, .lg-1{
-        display: none;
-        
+        display: none;  
     }
+    /* .projects{
+        display:inline;
+        max-width: 500px;
+    }
+    form{
+        text-align: center;
+        padding-bottom:20px;
+    } */
 }
 @media only screen and ( min-width: 768px ) {
     .sm-4, .lg-1 {
@@ -48,6 +55,7 @@ font: 200px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    max-width:100%;
 }
 
 body {
@@ -180,7 +188,7 @@ body {
 }
 .projects button{
     background-color:rgb(144, 121, 152);
-    font-size:22px;
+    font-size:18px;
     
 
 }
@@ -212,8 +220,8 @@ body {
 
 }
 .projects img{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 .logo_lang, .row1{
@@ -224,13 +232,13 @@ body {
     padding-bottom: 50px;
     padding-top: 12px;
     justify-content: space-between;
-    width:85%;
+    width:90%;
     text-align: center;
     
 }
 .logo_lang img{
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
 }
 .lang h1{
     color: white;
@@ -369,26 +377,28 @@ body {
 @media only screen and (max-width: 768px){
     .contact {
         /* width: 100%; */
-        margin-left: 2%; 
+        /* margin-left: 2%;  */
     } 
 }
 
 .contact{
     border-radius: 3px;
-    padding-top: 120px;
+    padding-top: 100px;
     background: linear-gradient(to top, rgb(137, 196, 247) 10%, rgb(223, 137, 182) 90%) no-repeat;
-    height: 800px;
+    height: 100%;
     text-align: center; 
     
 }
 .contact_body{
-    width: 440px;
+    /* width: 440px; */
     border: 1px solid #400485;
-    padding-top:50px;
+    /* padding-top:50px; */
     width:60%;
-    height:70%;
+    /* height:60%; */
     margin-left: 20%;
-    margin-top:5%
+    padding-bottom: 50px;
+    /* margin-top:5% */
+
 
 }
 .contact_body form{
@@ -407,7 +417,7 @@ body {
 /* /////////////FOOTER */
 
 footer{
-    height: 150px;
+    height: 90px;
     background-color:white
 }
 .bottom{
