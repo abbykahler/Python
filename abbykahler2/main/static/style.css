@@ -143,12 +143,14 @@ body {
 
 /* ////////////////////////////////// about page */
 .about{
-    background: rgb(248,178,253);
+    background: rgb(14, 13, 14);
     padding-top: 60px;
 
 } 
 .about h3{
     text-align: center;
+    color: white;
+    font-size: 36px;
 }
 .about_top{
     padding-top:30px;
