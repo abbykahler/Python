@@ -179,7 +179,7 @@ body {
     padding-left: 6%;
 }
 .projects button{
-    background-color:rgb(212, 202, 218);
+    background-color:rgb(144, 121, 152);
     font-size:22px;
     
 
@@ -187,12 +187,10 @@ body {
 .row1 {
     display: flex;
 
-    
-    
-    
 }
 .myButton{
     padding-top:15px;
+    
 }
 /* .port_button{ */
     /* display: flex; */
@@ -205,7 +203,9 @@ body {
 }
 
  */
-
+.project1 .btn:hover,.project2 .btn:hover,.project3 .btn:hover{
+    background-color: rgb(74, 79, 103);
+}
 .projects{
     padding-top: 20px;
     text-align: center;
