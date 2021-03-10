@@ -12,10 +12,32 @@
         <link rel="stylesheet" href="{% static 'style.css' %}"> 
     </head>
     <body>
+        <header>
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="/" class="logo">Abby Kahler</a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="/#portfolio" class="nav-links">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/#work" class="nav-links">Work</a>
+                    </li>
+                    <li>
+                        <a href="/#education" class="nav-links">Education</a>
+                    </li>
+                    <li>
+                        <a href="/#contact" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div class="trip_body">
             <div class="myButton">
                 <a href="/#portfolio">
-                <button class="btn">Back</button>
+                <button class="btn">Home</button>
                 </a>
             </div>
             <h1>Trip Tracker</h1>

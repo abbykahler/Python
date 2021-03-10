@@ -417,7 +417,7 @@ body {
     position: relative;
     width: 50%;
   }
- 
+
 
 
 /* /////////////FOOTER */
@@ -446,9 +446,13 @@ footer{
 }
 .trip_body img{
     width: 55%;
-    height:40%;
+    height:30%;
     padding-top: 10px;
 }
 .trip_body p{
     padding-top:20px;
+}
+.trip_body h1{
+    padding-top:30px;
+    font-size: 60px;
 }
