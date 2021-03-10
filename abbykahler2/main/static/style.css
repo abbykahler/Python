@@ -438,21 +438,33 @@ footer{
 
 /* ////////////////// TRIP PAGE */
 .trip_body{
-    background:black;
     height: 100%;
     text-align: center;
-    color:white;
+    color:black;
     font-size: 24px;
+    border-left: 350px solid rgb(10, 11, 10);
+    border-right: 350px solid rgb(10, 11, 10);
+
+    /* border-right: 300px  rgb(14, 14, 14); */
 }
 .trip_body img{
     width: 55%;
     height:30%;
     padding-top: 10px;
+    
 }
 .trip_body p{
     padding-top:20px;
+    
 }
 .trip_body h1{
     padding-top:30px;
     font-size: 60px;
+}
+
+.trip_center{
+    background-color: white;
+
+    /* width:40%; */
+    text-align: center;
 }
