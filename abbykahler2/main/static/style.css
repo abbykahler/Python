@@ -200,17 +200,7 @@ body {
     padding-top:15px;
     
 }
-/* .port_button{ */
-    /* display: flex; */
-    /* max-width: 800px; */
-    /* justify-content: space-between; */
-    
-/* }
-/* .project{
-    padding-bottom: 20px;
-}
 
- */
 .project1 .btn:hover,.project2 .btn:hover,.project3 .btn:hover{
     background-color: rgb(74, 79, 103);
 }
