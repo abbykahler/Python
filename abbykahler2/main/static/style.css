@@ -334,29 +334,6 @@ body {
     padding-top: 10px;
 }
 
-/* .schools .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgb(42, 35, 114);
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
-.lyon .btn:hover , .mtsu .btn:hover, .dojo .btn:hover{
-    background-color: rgb(169, 157, 157);
-}
-.btn.btn-block {
-    border-radius: 10px;
-    background-color: #9b71a5;
-    color: rgb(235, 235, 235)
-} */
 
 .lyon, .mtsu,  .dojo {
     /* position: absolute; */
@@ -447,9 +424,6 @@ footer{
     border-bottom: 100px solid rgb(10, 11, 10);
     padding-top: 70px;
     /* border-top: 100px solid rgb(10, 11, 10); */
-
-
-    /* border-right: 300px  rgb(14, 14, 14); */
 }
 .trip_body img{
     width: 69%;
