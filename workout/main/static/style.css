@@ -75,10 +75,11 @@ body {
 .shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout{
     padding-top:30px;
     border: 5px solid red;
+  
 
 }
-.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img{
-    height:400px;    
-    width: 500px;;
+.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img{
+    height:300px;    
+    width: 400px;;
 
 }
