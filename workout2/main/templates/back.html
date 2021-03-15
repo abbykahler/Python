@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+        <a href="/">Home</a> 
+        <div class='contact'>
+            <div class='contact_body'>
+        <h1>Contact</h1>
+            <form>
+                <label for="name"></label>
+                <input type="text" placeholder="Name"name='name' id="name"><br>
+
+                <label for="email"></label>
+                <input type="email" name='email' placeholder="Email"id="email"><br>
+
+                <label for="tell"></label>
+                <textarea name="plan" cols="30" rows="5" id="plan" placeholder="Tell me more"></textarea><br>
+
+                <button class="btn btn-block text-center my-3">Message Me!</button><br>
+            </div>
+        </div>
+    </body>
+</html>

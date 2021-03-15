@@ -69,6 +69,7 @@ body {
 .workout a{
     display: block;
     padding-bottom:20px;
+    font-size: 40px;
 }
 
 /* Shoulder  */
@@ -78,7 +79,7 @@ body {
   
 
 }
-.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,abs_workout img{
+.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.abs_workout img{
     height:300px;    
     width: 400px;;
 
