@@ -73,13 +73,13 @@ body {
 }
 
 /* Shoulder  */
-.shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout{
+.shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout{
     padding-top:30px;
     border: 5px solid red;
   
 
 }
-.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.abs_workout img{
+.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img{
     height:300px;    
     width: 400px;;
 
