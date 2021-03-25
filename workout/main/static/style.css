@@ -62,7 +62,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     padding-top:50px;
-    
+    background-color: rgb(118, 117, 120);
+    font-weight:bold;
 
 
 }
@@ -70,12 +71,14 @@ body {
     display: block;
     padding-bottom:20px;
     font-size: 40px;
+    text-decoration: none;
+    color: rgba(59, 35, 118);
 }
 
 /* Shoulder  */
 .shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout{
     padding-top:30px;
-    border: 5px solid red;
+    border: 5px solid rgb(147, 82, 169);
   
 
 }
