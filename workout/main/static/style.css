@@ -32,23 +32,10 @@
         display: none;
     }
 }
-/* body {
-    background-color: black;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding-top: 15px;
-} */
-
 
 .home_button div{
-font: 200px;
+font: 300px;
 }
-
-
-
-
-
 
 /* //////////////////////////////////header  */
 *{
@@ -79,11 +66,13 @@ body {
 .shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout{
     padding-top:30px;
     border: 5px solid rgb(147, 82, 169);
-  
-
 }
 .shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img{
     height:300px;    
     width: 400px;;
 
+}
+
+.body a{
+    font-size:100px;
 }
