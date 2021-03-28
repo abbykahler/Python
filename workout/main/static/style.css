@@ -67,6 +67,8 @@ body {
     padding-top:30px;
     border: 5px solid rgb(147, 82, 169);
 }
+
+
 .shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img{
     height:300px;    
     width: 400px;;
