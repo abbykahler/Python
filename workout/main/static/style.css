@@ -9,15 +9,7 @@
     .main-nav li,.footer, .lg-1{
         display: none;  
     }
-    /* .projects{
-        display:inline;
-        max-width: 500px;
-    }
-    form{
-        text-align: center;
-        padding-bottom:20px;
-    } */
-}
+
 @media only screen and ( min-width: 768px ) {
     .sm-4, .lg-1 {
         display: none;
