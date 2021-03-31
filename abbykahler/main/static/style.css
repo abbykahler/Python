@@ -240,14 +240,12 @@ footer{
     margin-left: 20%;
     padding-top: 25px;
     padding-bottom: 20px;
-
 }
 .work1 ul, .work2 ul, .work3 ul{
     list-style-type:square;
     list-style-position: inside;
     text-align: left;
     padding-top: 15px;
-
 }
 
 .work_body{
