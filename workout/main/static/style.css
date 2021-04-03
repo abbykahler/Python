@@ -41,7 +41,7 @@ body {
     padding-bottom:20px;
     font-size: 40px;
     text-decoration: none;
-    color: rgba(59, 35, 118);
+    color: rgb(47, 19, 118);
 }
 /* Shoulder  */
 .shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout{
@@ -53,4 +53,9 @@ body {
     height:30%;    
     width: 30%;
 
+}
+.home_button a{
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(47, 19, 118);
 }
