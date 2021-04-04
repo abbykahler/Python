@@ -9,21 +9,6 @@ class ContactForm(forms.Form):
         required=True,
         widget=forms.Textarea
     )
-# class UserManager(models.Manager):
-
-#     def register_validator(self, post_data):
-#         errors = {}
-#         if len(post_data['first_name']) < 3: 
-#             errors['first_name'] = "First name must be 3 characters or more!"
-#         if len(post_data['last_name']) < 3: 
-#             errors['last_name'] = "Last name  must be 3 characters or more!"
-#         if len(post_data['email']) < 8: 
-#             errors['email'] = "Email must be 8 characters or more!"
-#         if len(post_data['password']) < 8: 
-#             errors['password'] = "Password must be 4 characters or more!"
-#         if post_data['password'] != post_data['confirm_password']: 
-#             errors['confirm'] = "Passwords don't match!"
-#         return errors
 
 #     def login_validator(self, post_data):
 #         errors = {}

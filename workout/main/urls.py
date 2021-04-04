@@ -12,5 +12,4 @@ urlpatterns = [
     path('tri', views.tri),
     path('shoulder', views.shoulder),
     
-
 ]
