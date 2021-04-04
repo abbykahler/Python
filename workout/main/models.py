@@ -53,17 +53,3 @@ class ContactForm(forms.Form):
 #         elif len(post_data['plan']) < 3:
 #             errors['plan'] = 'Plan should have at least 3 characters.'
 
-#         return errors
-
-#     def login_validator(self, post_data):
-#         errors = {}
-#         if len(post_data['email']) < 8:
-#             errors['email'] = "Email must be 8 characters or more!"
-#         if len(post_data['password']) < 8:
-#             errors['password'] = "Password must be 8 characters or more!"
-#         return errors
-
-#     # def __repr__(self):
-#     #     return f'{self.first_name} {self.last_name} {self.email} {self.password}'
-
-
