@@ -3,8 +3,6 @@ import random
 from datetime import datetime 
 
 
-# from collection.forms import ContactForm
-
 def index(request):
     return render(request,'index.html')
 
@@ -29,4 +27,3 @@ def tri(request):
 
 def shoulder(request):
     return render(request, 'shoulders.html')
-
