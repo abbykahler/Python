@@ -67,13 +67,3 @@ class ContactForm(forms.Form):
 #     #     return f'{self.first_name} {self.last_name} {self.email} {self.password}'
 
 
-# class Trip(models.Model):
-#     destination = models.CharField(max_length=55)
-#     start_date = models.DateTimeField()
-#     end_date = models.DateTimeField()
-#     plan = models.TextField(max_length=100)
-#     created_at = models.DateTimeField(auto_now_add=True)
-#     updated_at = models.DateTimeField(auto_now_add=True)
-#     objects = TripManager()
-#     user_trip = models.ForeignKey(User, related_name='created_trips', on_delete=models.CASCADE)
-#     other_users = models.ManyToManyField(User, related_name='added_trips')
