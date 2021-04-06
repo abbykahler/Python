@@ -11,5 +11,6 @@ urlpatterns = [
     path('legs', views.legs),
     path('tri', views.tri),
     path('shoulder', views.shoulder),
+    path('booty', views.booty),
     
 ]

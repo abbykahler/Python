@@ -27,3 +27,6 @@ def tri(request):
 
 def shoulder(request):
     return render(request, 'shoulders.html')
+
+def booty(request):
+    return render(request, 'booty.html')
