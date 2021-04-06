@@ -10,15 +10,7 @@ from django import forms
 #         widget=forms.Textarea
 #     )
 
-#     def login_validator(self, post_data):
-#         errors = {}
-#         if len(post_data['email']) < 8:
-#             errors['email'] = "Email must be 8 characters or more!"
-#         if len(post_data['password']) < 8:
-#             errors['password'] = "Password must be 8 characters or more!"
-#         return errors
-    
-    
+
 
 
 
