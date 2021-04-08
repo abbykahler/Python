@@ -3,10 +3,6 @@ import random
 from datetime import datetime 
 
 
-# from collection.forms import ContactForm
-
-
-
 def index(request):
     return render(request,'index.html')
 
@@ -23,9 +19,7 @@ def chest(request):
     return render(request, 'chest.html')
 
 def legs(request):
-    # form_class = ContactForm
     return render(request, 'legs.html', {
-        # 'form': form_class,
     })
 
 def tri(request):
@@ -34,3 +28,5 @@ def tri(request):
 def shoulder(request):
     return render(request, 'shoulders.html')
 
+def booty(request):
+    return render(request, 'booty.html')
