@@ -12,7 +12,7 @@ class Workout(models.Model):
     # set6 = models.IntergerField()
     reps = models.IntergerField()
     lbs = models.IntergerField()
-    id = models.IntergerField()
+    # id = models.IntergerField()
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
