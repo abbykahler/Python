@@ -15,9 +15,6 @@
     .lg-1 , contact, .body{
         display: block;
     }
-    .sm-4, .med-2 {
-        display: none;
-    }
 }
 /* //////////////////////////////////header  */
 *{
