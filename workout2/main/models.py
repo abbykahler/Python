@@ -2,7 +2,7 @@ from django.db import models
 
 class Workout(models.Model):
     exercise = models.CharField(max_length=200)
-    # muscle = models.CharField(max_length=200)
+    muscle = models.CharField(max_length=200)
     # image = models.ImageField(upload_to='cars').ImageField(upload_to='cars')
     set1 = models.IntergerField()
     # set2 = models.IntergerField()
