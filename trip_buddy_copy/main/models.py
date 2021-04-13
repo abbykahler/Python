@@ -84,3 +84,14 @@ class Trip(models.Model):
     objects = TripManager()
     user_trip = models.ForeignKey(User, related_name='created_trips', on_delete=models.CASCADE)
     other_users = models.ManyToManyField(User, related_name='added_trips')
+
+class Trip2(models.Model):
+    destination2 = models.CharField(max_length=55)
+    start_date2 = models.DateTimeField()
+    end_date2 = models.DateTimeField()
+    plan2 = models.TextField(max_length=100)
+    created_at2 = models.DateTimeField(auto_now_add=True)
+    updated_at2 = models.DateTimeField(auto_now_add=True)
+    objects2 = TripManager()
+    user_trip = models.ForeignKey(User, related_name='created_trips', on_delete=models.CASCADE)
+    other_users = models.ManyToManyField(User, related_name='added_trips')

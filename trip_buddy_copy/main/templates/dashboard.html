@@ -17,7 +17,7 @@
         <div>
         {% csrf_token %}
         <h1>Hello {{ current_user.first_name }}</h1>
-        <h2>Your trips</h2>
+        <h2>Your Exercises</h2>
         <table>
             <tr>
                 <th>Set</th>
@@ -73,11 +73,11 @@
                 {% for trip in current_user_created_trips%}
                 
                     <tr>
-                        <td><a href="/trips/{{trip.id}}"> {{trip.destination}}</a></td>
-                        <td>{{trip.start_date}}</td>
-                        <td>{{trip.end_date}}</td>
-                        <td>{{trip.plan}}</td>
-                        <td><a href='/trips/{{trip.id}}/delete'>Remove</a> | <a href='/trips/{{trip.id}}/edit'>Edit</a></td>
+                        <td><a href="/trips/{{trip2.id}}"> {{trip2.destination}}</a></td>
+                        <td>{{trip2.start_date}}</td>
+                        <td>{{trip2.end_date}}</td>
+                        <td>{{trip2.plan}}</td>
+                        <td><a href='/trips/{{trip2.id}}/delete'>Remove</a> | <a href='/trips/{{trip2.id}}/edit'>Edit</a></td>
                     </tr>
                 {% endfor %}
                 
