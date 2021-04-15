@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Workout(models.Model):
     exercise = models.CharField(max_length=200)
     muscle = models.CharField(max_length=200)
