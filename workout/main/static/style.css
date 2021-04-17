@@ -5,12 +5,6 @@
         display: none;  
     }
 
-@media only screen and ( min-width: 768px ) {
-    .sm-4, .lg-1 {
-        display: none;
-        width: 100%;
-    }
-}
 
 
 /* //////////////////////////////////header  */
