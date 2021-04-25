@@ -41,7 +41,7 @@ body {
     font-size:75px;
 }
 
-.shoulder_workout h1 {
+.shoulder_workout h1,.chest_workout h1, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout,.booty_workout {
     font-weight: bold;
     font-size: 60px;
 }
