@@ -40,3 +40,8 @@ body {
 .workout h1{
     font-size:75px;
 }
+
+.shoulder_workout h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
