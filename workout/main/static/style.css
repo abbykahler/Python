@@ -28,8 +28,8 @@ body {
     margin-left: 10%;
 }
 .shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img,.booty_workout img{
-    height:30%;    
-    width: 30%;
+    height:40%;    
+    width: 40%;
 
 }
 .home_button a{
@@ -46,6 +46,6 @@ body {
 }
 .exercise {
     border: 5px solid rgb(47, 19, 118);
-    width: 60%;
-    margin-left:20%;
+    width: 30%;
+    margin-left:35%;
 }
