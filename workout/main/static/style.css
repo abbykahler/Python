@@ -44,3 +44,8 @@ body {
     font-weight: bold;
     font-size: 60px;
 }
+.exercise {
+    border: 5px solid rgb(47, 19, 118);
+    width: 60%;
+    margin-left:20%;
+}
