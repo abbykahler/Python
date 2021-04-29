@@ -26,8 +26,8 @@ body {
     margin-left: 10%;
 }
 .shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img,.booty_workout img{
-    height:40%;    
-    width: 40%;
+    height:50%;    
+    width: 50%;
 }
 .home_button a{
     font-size: 50px;
