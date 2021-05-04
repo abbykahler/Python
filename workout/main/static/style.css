@@ -57,4 +57,7 @@ body {
     /* .workout{
         width: 25%;
      } */
+     .shoulder_workout h1, .chest_workout h1, .tri_workout h1, .leg_workout h1, .bi_workout h1, .abs_workout h1,.back_workout h1,.booty_workout h1{
+         font-size: 30px;
+     }
     }
