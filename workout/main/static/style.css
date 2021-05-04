@@ -48,11 +48,17 @@ body {
     width: 30%;
     margin-left:35%;
 }
-
+.bod {
+    display: inline;
+    padding-bottom: 20px;
+    
+}
 
 @media only screen and (max-width: 700px) {
     .exercise a{
         font-size:20px;
+        width: 95%;
+
     }
     .shoulder_workout h1, .chest_workout h1, .tri_workout h1, .leg_workout h1, .bi_workout h1, .abs_workout h1,.back_workout h1,.booty_workout h1{
         font-size: 30px;
