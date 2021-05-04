@@ -60,4 +60,8 @@ body {
     .home_button a{
         font-size:35px;
     }
+    .shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img,.booty_workout img{
+        height:20%;
+        width:70%;
+    }
     }
