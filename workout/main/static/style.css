@@ -50,14 +50,14 @@ body {
 }
 
 
-
 @media only screen and (max-width: 700px) {
     .exercise a{
-        font-size:20px;}
-    /* .workout{
-        width: 25%;
-     } */
+        font-size:20px;
+    }
     .shoulder_workout h1, .chest_workout h1, .tri_workout h1, .leg_workout h1, .bi_workout h1, .abs_workout h1,.back_workout h1,.booty_workout h1{
         font-size: 30px;
+    }
+    .home_button a{
+        font-size:35px;
     }
     }
