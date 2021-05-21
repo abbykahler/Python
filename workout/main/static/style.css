@@ -69,7 +69,6 @@ body {
     }
     }
     .type h1{
-        font-size:60px;
         font-weight:bold;
         background: red;
     background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
@@ -78,6 +77,6 @@ body {
     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 10vw;
+    font-size: 7vw;
 
     }
