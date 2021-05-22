@@ -30,11 +30,7 @@ body {
     height:50%;    
     width: 50%;
 }
-.home_button a{
-    font-size: 50px;
-    text-decoration: none;
-    color: rgb(47, 19, 118);
-}
+
 .workout h1{
     font-size:75px;
 }
@@ -60,23 +56,21 @@ body {
     .shoulder_workout h1, .chest_workout h1, .tri_workout h1, .leg_workout h1, .bi_workout h1, .abs_workout h1,.back_workout h1,.booty_workout h1{
         font-size: 30px;
     }
-    .home_button a{
-        font-size:35px;
-    }
     .shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img,.booty_workout img{
         height:20%;
         width:70%;
     }
     }
-    .type h1{
+    .home_button a{
         font-weight:bold;
         background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 7vw;
+        background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+        background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 6vw;
+        padding-top: 200px;
 
     }
