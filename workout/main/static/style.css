@@ -48,6 +48,19 @@ body {
     padding-bottom: 20px;
     
 }
+.home_button a{
+    font-weight:bold;
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    display: inline;
+    padding-right: 30px;
+}
 @media only screen and (max-width: 700px) {
     .exercise a{
         font-size:20px;
@@ -61,16 +74,4 @@ body {
         width:70%;
     }
     }
-    .home_button a{
-        font-weight:bold;
-        background: red;
-        background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-        background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-        background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-        background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 6vw;
-        padding-top: 200px;
-
-    }
+    
