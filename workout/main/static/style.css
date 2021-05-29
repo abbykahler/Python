@@ -14,7 +14,7 @@ body {
 }
 .workout a{
     display: block;
-    padding-bottom:20px;
+    padding-bottom:15px;
     font-size: 40px;
     text-decoration: none;
     color: rgb(53, 22, 132);
@@ -65,7 +65,6 @@ body {
     font-weight: bold;
     text-align: center;
 }
-
 
 @media only screen and (max-width: 700px) {
     .exercise a{
