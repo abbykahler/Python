@@ -30,3 +30,9 @@ def shoulder(request):
 
 def booty(request):
     return render(request, 'booty.html')
+
+def stretch(request):
+    return render(request, 'stretch.html')
+
+def yoga(request):
+    return render(request, 'yoga.html')
