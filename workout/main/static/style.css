@@ -20,6 +20,7 @@ body {
     text-decoration: none;
     color: rgb(53, 22, 132);
 }
+
 .shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout,.booty_workout{
     padding-top:30px;
     border: 5px solid rgb(47, 19, 118);
@@ -41,13 +42,16 @@ body {
 }
 .exercise {
     border: 5px solid rgb(47, 19, 118);
-    width: 30%;
-    margin-left:35%;
+    width: 34%;
+    margin-left:33%;
 }
 .bod {
     display: inline;
     padding-bottom: 20px;
-    
+}
+.dash h1{
+    font-size:60px;
+    font-weight: bold;
 }
 .workout {
     display: flex;
@@ -72,8 +76,8 @@ body {
 
 @media only screen and (max-width: 700px) {
     .exercise a{
-        font-size:20px;
-        width: 95%;
+        font-size:18px;
+        width: 98%;
     }
     .shoulder_workout h1, .chest_workout h1, .tri_workout h1, .leg_workout h1, .bi_workout h1, .abs_workout h1,.back_workout h1,.booty_workout h1{
         font-size: 30px;
@@ -89,5 +93,8 @@ body {
     }
     .home_button a{
         font-size:25px;}
+    }
+    .dash h1{
+        font-size:50px;
     }
     
