@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 import random
-from datetime import datetime 
+# from datetime import datetime 
 
 
 def index(request):
