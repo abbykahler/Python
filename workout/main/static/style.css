@@ -21,14 +21,14 @@ body {
     color: rgb(53, 22, 132);
 }
 
-.shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout,.booty_workout{
+.shoulder_workout, .chest_workout, .tri_workout, .leg_workout, .bi_workout, .abs_workout,.back_workout,.booty_workout, .yoga_workout{
     padding-top:30px;
     border: 5px solid rgb(47, 19, 118);
     padding-bottom:50px;
     width: 80%;
     margin-left: 10%;
 }
-.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img,.booty_workout img{
+.shoulder_workout img, .chest_workout img, .tri_workout img,.leg_workout img,.bi_workout img,.back_workout img,.booty_workout img, .yoga_workout img{
     height:50%;    
     width: 50%;
 }
@@ -36,7 +36,7 @@ body {
 .workout h1{
     font-size:75px;
 }
-.shoulder_workout h1, .chest_workout h1, .tri_workout h1, .leg_workout h1, .bi_workout h1, .abs_workout h1,.back_workout h1,.booty_workout h1 {
+.shoulder_workout h1, .chest_workout h1, .tri_workout h1, .leg_workout h1, .bi_workout h1, .abs_workout h1,.back_workout h1,.booty_workout h1, .yoga_workout h1{
     font-weight: bold;
     font-size: 60px;
 }
