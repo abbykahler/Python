@@ -74,6 +74,8 @@ body {
     text-align: center;
 }
 
+
+
 @media only screen and (max-width: 700px) {
     .exercise a{
         font-size:18px;
