@@ -12,24 +12,23 @@
         <link rel="stylesheet" href="{% static 'style.css' %}"> 
     </head>
     <body>
+        <div class="dash">
+            <h1>Work Out Dashboard</h1>
+        </div>
         <div class="workout">
-            <h1>Work Outs</h1>
             <div class="exercise">
-                <a href="/abs">Abs</a>
-                <a href="/back">Back</a>
-                <a href="/bi">Bicep</a>
-                <a href="/booty">Booty</a>
-                <a href="/chest">Chest</a>
-                <a href="/legs">Legs</a>
-                <a href="/shoulder">Shoulders</a>
-                <a href="/stretch">Stretches</a>
-                <a href="/tri">Tricep</a>
+                <a href="/abs">Abs<input type="checkbox" id="abs"</a>
+                <a href="/back">Back<input type="checkbox" id="back"/a>
+                <a href="/bi">Bicep<input type="checkbox" id="bi"</a>
+                <a href="/booty">Booty<input type="checkbox" id="booty"</a>
+                <a href="/chest">Chest<input type="checkbox" id="chest"</a>
+                <a href="/legs">Legs<input type="checkbox" id="legs"</a>
+                <a href="/shoulder">Shoulders<input type="checkbox" id="shouilders"</a>
+                <a href="/tri">Tricep<input type="checkbox" id="tri"</a>
+                <a href="/stretch">Stretch</a>
                 <a href="/yoga">Yoga</a>
+            
             </div>
         </div>
-        {% comment %} <div class="check">
-            <input type="checkbox" id="abs" name="abs" value="exercise">
-            <label for="abs"> Abs</label><br>    
-        </div> {% endcomment %}
     </body> 
 </html>
