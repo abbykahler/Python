@@ -5,41 +5,5 @@
   font-size: 18px;
   font-family: Verdana;
 }
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
 
-td, th{
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-
-h1{ 
-    text-align: center;
-    padding-top: 20px;
-}
-.add {
-  text-align: center;
-  padding-top: 20px;
-}
-
-.view{
-  padding-left: 20px;
-}
-
-.edit{
-  padding-left: 20px;
-  padding-top: 20px;
-  text-align: center;
-  
-}
   
