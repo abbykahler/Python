@@ -13,35 +13,6 @@
   
     </head>
     <body>
-
-        <a href="/shows">Go Back</a>
-        <h1>Add a New Show</h1>
-
-        <table>
-            <div class="edit">
-                <form action="/shows/create" method="post">
-                    {% csrf_token %}
-                    <label for="title">Title:</label>
-                    <input type="text" name='title' id="title"><br><br>
-
-                    <label for="network">Network</label>
-                    <input type="text" name='network' id="network"><br><br>
-
-                    <label for="release_date">Release Date</label>
-                    <input type="date" name='release_date' id="release_date"><br><br>
-
-                    <label for="description">Description</label>
-                    <input type="text" name='description' id="description"><br><br>
-                    <button>Create</button>
-                </form>
-            </table>
-        </div>
-            {% if messages %}
-                {% for message in messages %}
-                    <p>{{ message}}</p>
-
-                {% endfor%}
-            {% endif %}
-
+    
     </body>
 </html>

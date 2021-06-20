@@ -10,11 +10,6 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 
-.body {
-  background-color: black;
-  height: 100%;
-}
-
 </style>
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}"> 
@@ -25,13 +20,16 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-center" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         
-    <img src="static/img/logo.png" class="w3-button w3-padding-large" style="width: 300px; height:110x;"><br>
-    <a href="#snare" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGNATURE SNARE</a>
+    <img src="static/img/logo.png" class="w3-button w3-padding-large" style="width: 270px; height:110x;"><br>
+
+    <div class="container">
+    <a href="/snare" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGNATURE SNARE</a>
     <a href="#press" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRESS</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR DATES</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
     <a href="#images" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IMAGES</a>
+    </div>
     {% comment %} <a href="#merch" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MERCH</a> {% endcomment %}
 <!--     <div class="w3-dropdown-hover w3-hide-small">     
     </div>

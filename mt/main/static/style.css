@@ -6,6 +6,15 @@
   font-family: Verdana;
 }
 
-.w3-top{
+.w3-top, w3-bar-item{
+  text-align: center;
+}
+
+.body {
+  background-color: black;
+  height: 100%;
+}
+
+.container {
   text-align: center;
 }
