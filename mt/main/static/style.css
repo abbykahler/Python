@@ -6,7 +6,7 @@
   font-family: Verdana;
 }
 
-.w3-top, w3-bar-item{
+.w3-top{
   text-align: center;
 }
 
@@ -14,7 +14,8 @@
   background-color: black;
   height: 100%;
 }
-
-.container {
+.p{
   text-align: center;
 }
+table{
+align-items: center;}

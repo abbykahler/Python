@@ -21,4 +21,7 @@ def contact(request):
 def about(request):  
     return render(request, 'about.html')
 
+def images(request):  
+    return render(request, 'img.html')
+
 
