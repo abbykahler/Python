@@ -19,3 +19,7 @@
 }
 table{
 align-items: center;}
+
+footer a{ 
+  text-decoration: none;
+}
