@@ -8,3 +8,14 @@ def home(request):
 
 def snare(request):  
     return render(request, 'snare.html')
+
+def press(request):  
+    return render(request, 'press.html')
+
+def tour(request):  
+    return render(request, 'tour.html')
+
+def contact(request):  
+    return render(request, 'contact.html')
+
+
