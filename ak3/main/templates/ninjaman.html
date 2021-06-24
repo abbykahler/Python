@@ -47,7 +47,6 @@
             position: absolute;
             left: 40px;
             top: 40px;
-
         }
         #score {
 		    width: 40px;
@@ -101,13 +100,15 @@
             padding-left: 200px;
         }
         .home_button .btn{
-            background-color: white;
-            margin-left:217px;
+            background-color: lightblue;
+            margin-left:10px;
             padding: 5px;
-            font-size:25px;
-            border-radius: 5px;
-    
+            font-size:25px; 
+			border-radius: 5px;  
         }
+		.home_button {
+			padding-top:20px;
+		}
     </style>
 </head>
 
@@ -118,11 +119,11 @@
     <div id='pinky'></div>
     <div id='pumpky'></div>
     <div id='red'></div>
+    <div><h1>Score: <span id="score"></span>
     <div class="home_button">
-        <a href="/">
+        <a href="/#portfolio">
         <button class="btn">Home</button>
         </a>
-    </div>
 </body>
 <script type="text/javascript">
     var world = [
@@ -366,6 +367,6 @@
             }
         }     
     }
- }
+}
 </script>
 </html>
