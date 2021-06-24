@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Verdana;
+}
+
+.w3-top{
+  text-align: center;
+}
+
+.body {
+  background-color: black;
+  height: 100%;
+}
+.p{
+  text-align: center;
+}
+table{
+align-items: center;}
+
+footer a{ 
+  text-decoration: none;
+}
+.contact {
+text-align: center;}
+
+.mySlides img{
+  height: 600px;
+}
