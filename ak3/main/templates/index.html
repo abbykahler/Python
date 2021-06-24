@@ -137,36 +137,40 @@ body {font-family: "Lato", sans-serif}
 <div class="para2 w3-black">
     <div class="parallax2"></div>
   
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="work">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="work">
     <div class="w3-row w3-padding-32">
         <div class="w3-center">
-          <img src="/static/img/cinebags.jpg" class="w3-round w3-margin-bottom" alt="CineBags" style="width:10%">
+          <img src="/static/img/cinebags.jpg" class="w3-round" alt="CineBags" style="width:10%">
         </div>
-      <h2 class="w3-wide">Director of Business Devolopment</h2>
-      <p class="w3-wide"><i>2013-2020</i></p>
-      <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. </p>
-      </div>
+      <h2 class="w3-wide w3-center">Director of Business Devolopment</h2>
+      <p class="w3-wide w3-center"><i>2013-2020</i></p>
+      <ul class="w3-left">
+        <li>Sales, Dealer and Customer Relations</li>
+        <li>Overseeing warehouse to ensure shipments go out on schedule</li>
+        <li>Social media manager responsible for the company Instagram and building 52k followers</li>
+        <li>Managing on-site technology and troubleshooting any problems for all staff</li></p>
+    </div>
 
-      <div class="w3-row w3-padding-32">
+    <div class="w3-row w3-padding-32">
         <div class="w3-center">
           <img src="/static/img/verizon.webp" class="w3-round w3-margin-bottom" alt="Verizon" style="width:30%">
         </div>
-      <h2 class="w3-wide">Sales Rep</h2>
-      <p class="w3-wide"><i>2011-2013</i></p>
-      <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. </p>
-      </div>
+      <h2 class="w3-wide w3-center">Sales Rep</h2>
+      <p class="w3-wide w3-center"><i>2011-2013</i></p>
+      <ul class="w3-left">
+        <li>Provide tech support and quick fixes for customers, directly impacting their experience</li>
+        <li>Responsible for meeting and exceeding monthly quota</li>
+    </div>
 
       <div class="w3-row w3-padding-32">
-        {% comment %} <div class="w3-center">
-          <img src="/static/img/verizon.webp" class="w3-round w3-margin-bottom" alt="Verizon" style="width:30%">
-        </div> {% endcomment %}
-      <h2 class="w3-wide">Post Production Film</h2>
-      <p class="w3-wide"><i>2005-2011</i></p>
-      <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. </p>
-      </div>
+      <h2 class="w3-wide w3-center">Post Production Film</h2>
+      <p class="w3-wide w3-center"><i>2005-2011</i></p>
+      <ul class="w3-left">
+        <li>Various studios like Warner Brothers, Sony, Universal, and Paramount</li>
+        <li>Managed multiple projects at once with short deadlines</li>
+        <li>Sound fx editor and foley artist on more than 60 feature films</li>
+        <li>Expert with editing softwares like Pro Tools and Final Cut</li>
+    </div>
 
   </div>
 
@@ -190,7 +194,7 @@ body {font-family: "Lato", sans-serif}
 <div class="para3">
     <div class="parallax3"></div>
   </div>
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:2000px;margin-top:46px" id="education">
 
   <!-- Automatic Slideshow Images -->
 
@@ -344,10 +348,9 @@ body {font-family: "Lato", sans-serif}
   <h4>©2021 Abby Kahler</h4>      
 </footer>
 
-{% comment %} <script>
+<script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
-var myIndex2 =0;
 carousel();,
 
 function carousel() {
@@ -373,13 +376,13 @@ function myFunction() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
- var modal = document.getElementById('ticketModal');
+  var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-</script> {% endcomment %}
+</script>
 
 </body>
 </html>
