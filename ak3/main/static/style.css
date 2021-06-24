@@ -20,4 +20,13 @@
   text-decoration: none;
 }
 
-
+.contact a, .contact h2{
+  text-decoration: none;
+  font-size: 30px;
+}
+.mySlide1 img, .mySlide2 img, .mySlide3 img{
+  height: 400px;
+}
+.mySlide1 h1{
+  font-size: 200;
+}
