@@ -26,7 +26,7 @@
             height: 40px;
             width: 40px;
             display: inline-block;
-            background-image: url('static/image/sushi.png');
+            background-image: url('static/img/sushi.png');
             background-size: contain;
         }
         .onigiri {
@@ -34,7 +34,7 @@
             height: 40px;
             width: 40px;
             display: inline-block;
-            background-image: url('static/image/onigiri.png');
+            background-image: url('static/img/onigiri.png');
             background-size: contain;
         }
         #ninjaman {
@@ -42,22 +42,24 @@
             height: 40px;
             width: 40px;
             display: inline-block;
-            background-image: url('static/image/ninja.gif');
+            background-image: url('static/img/ninja.gif');
             background-size: contain;
             position: absolute;
             left: 40px;
             top: 40px;
+
         }
         #score {
 		    width: 40px;
 			display: inline-block;
+
         }
         #pinky {
             background-color: black;
             height: 40px;
             width: 40px;
             display: inline-block;
-            background-image: url('static/image/bluey.gif');
+            background-image: url('static/img/bluey.gif');
             background-size: contain;
             position: absolute;
             left: 40px;
@@ -68,7 +70,7 @@
             height: 40px;
             width: 40px;
             display: inline-block;
-            background-image: url('static/image/scaredy.png');
+            background-image: url('static/img/scaredy.png');
             background-size: contain;
             position: absolute;
             left: 40px;
@@ -79,7 +81,7 @@
             height: 40px;
             width: 40px;
             display: inline-block;
-            background-image: url('static/image/red.gif');
+            background-image: url('static/img/red.gif');
             background-size: contain;
             position: absolute;
             left: 40px;
@@ -90,7 +92,7 @@
             height: 40px;
             width: 40px;
             display: inline-block;
-            background-image: url('static/image/pumpky.gif');
+            background-image: url('static/img/pumpky.gif');
             background-size: contain;
             position: absolute;
             left: 40px;
@@ -217,6 +219,7 @@
         document.getElementById('pinky').style.left = pinky.x * 40 + 'px'
     }
     function checkMovement(){
+       
         for (var i = 0; i < ghosts.length; i++){
             var ghost = ghosts[i];
             if (world[ghost.y][ghost.x - 1] != 1 
