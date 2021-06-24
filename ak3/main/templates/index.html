@@ -162,27 +162,39 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
+
   <div class="mySlides w3-display-container w3-center">
     <img src="static/img/codingdojo.jpg" style="width:100%;">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Coding Dojo Attended: 2020-2021</h3>
+    <div class="w3-display-middle w3-container w3-text-black w3-padding-32">
+      <h3><b>Coding Dojo Attended: 2020-2021</b></h3>
       <p><b>Graduated: Certificate</b></p>  
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="static/img/mtsu.jpg" style="width:100% ">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>MTSU Attended: 2001-2005</h3>
+    <div class="w3-display-middle w3-container w3-text-black w3-padding-32 ">
+      <h3><b>MTSU Attended: 2001-2005</b></h3>
       <p><b>Graduated: BS</b></p>    
     </div> 
   </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="static/img/lyon.jpg" style="width:100% ">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>3</h3>
-      <p><b>third tile</b></p>    
+
+  <div class="mySlide2 w3-display-container w3-center">
+    <img src="static/img/codingdojo.jpg" style="width:100%;">
+    <div class="w3-display-middle w3-container w3-text-black w3-padding-32">
+      <h3><b>Coding Dojo Attended: 2020-2021</b></h3>
+      <p><b>Graduated: Certificate</b></p>  
+    </div>
+  </div>
+  <div class="mySlide2 w3-display-container w3-center">
+    <img src="static/img/mtsu.jpg" style="width:100% ">
+    <div class="w3-display-middle w3-container w3-text-black w3-padding-32 ">
+      <h3><b>MTSU Attended: 2001-2005</b></h3>
+      <p><b>Graduated: BS</b></p>    
     </div> 
   </div>
+
+  
+
 </div>
 
 
@@ -338,7 +350,9 @@ body {font-family: "Lato", sans-serif}
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
-carousel();
+var myIndex2 =0;
+carousel();,
+carousel2();
 
 function carousel() {
   var i;
@@ -349,7 +363,18 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  setTimeout(carousel, 2000);    
+}
+function carousel2() {
+  var i;
+  var x = document.getElementsByClassName("mySlide2");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex2++;
+  if (myIndex2 > x.length) {myIndex2 = 1}    
+  x[myIndex2-1].style.display = "block";  
+  setTimeout(carousel2, 2000);    
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -363,12 +388,12 @@ function myFunction() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
+{% comment %} var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+} {% endcomment %}
 </script>
 
 </body>
