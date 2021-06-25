@@ -52,24 +52,23 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-center" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="/" class="w3-bar-item-center w3-button w3-padding-large "><b>Abby Kahler</b></a>
-    <a href="#portfolio" class="w3-bar-item-center w3-button w3-padding-large w3-hide-small">Portfolio</a>
-    <a href="#work" class="w3-bar-item-center w3-button w3-padding-large w3-hide-small">Work</a>
-    <a href="#education" class="w3-bar-item-center w3-button w3-padding-large w3-hide-small">Education</a>
-    <a href="#contact" class="w3-bar-item-center w3-button w3-padding-large w3-hide-small">Contact</a>
+    <div class="w3-bar w3-white w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-center" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="/" class="w3-bar-item-center w3-button w3-padding-large "><b>Abby Kahler</b></a>
+        <a href="/#portfolio" class="w3-bar-item-center  w3-button w3-padding-large w3-hide-small">Portfolio</a>
+        <a href="/about" class="w3-bar-item-center  w3-button w3-padding-large w3-hide-small">Work</a>
+        <a href="/press" class="w3-bar-item-center  w3-button w3-padding-large w3-hide-small">Education</a>
+        <a href="/contact" class="w3-bar-item-center  w3-button w3-padding-large w3-hide-small">Contact</a>
     </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="/" class="w3-bar-item-center  w3-button w3-padding-large ">Abby Kahler</a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Portfolio</a>
-  <a href="#work" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Work</a>
-  <a href="#education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Education</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-</div><br><br>
+    <a href="/#portfolio" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Portfolio</a>
+    <a href="/#work" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Work</a>
+    <a href="/#education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Education</a>
+    <a href="/#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+</div><br><br><br>
 
 <!-- Page content -->
 {% comment %} intro page {% endcomment %}
@@ -309,7 +308,7 @@ body {font-family: "Lato", sans-serif}
 var myIndex = 0;
 carousel();
 
-{% comment %} function carousel() {
+function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
@@ -318,21 +317,21 @@ carousel();
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000);    
-} {% endcomment %}
+  setTimeout(carousel, 4000);    
+}
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
-    x.className += "w3-show";
+    x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
 }
 
 // When the user clicks anywhere outside of the modal, close it
-  var modal = document.getElementById('ticketModal');
+var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
