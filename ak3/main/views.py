@@ -16,11 +16,11 @@ def ninjaman(request):
 def airplane(request):
     return render(request, 'airplane.html')
 
-def contact(request):
-    # form_class = ContactForm
-    return render(request, 'index.html', {
-        # 'form': form_class,
-    })
+# def contact(request):
+#     # form_class = ContactForm
+#     return render(request, 'index.html', {
+#         # 'form': form_class,
+#     })
 
 def trip(request):
     return render(request, 'trip.html')
