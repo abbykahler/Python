@@ -8,7 +8,4 @@ urlpatterns = [
     path('ninjaman', views.ninjaman),
     path('airplane', views.airplane),
     path('trip', views.trip),
-
-    
 ]
-    
