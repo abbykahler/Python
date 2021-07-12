@@ -18,10 +18,8 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Title</th>
-                                    <th>Network</th>
-                                    <th>Release Date</th>
+                                    <th>Body Part</th>
+                                    <th>Date</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -29,9 +27,9 @@
                         {% for show in shows %}
                             {% csrf_token %}
                             <tr>
-                                <th>{{ show.id }}</th>
+                                {% comment %} <th>{{ show.id }}</th> {% endcomment %}
                                 <th>{{ show.title }}</th>
-                                <th>{{ show.network }}</th>
+                                {% comment %} <th>{{ show.network }}</th> {% endcomment %}
                                 <th>{{ show.release_date.date }}</th>
                                 <th><a href="/shows/{{ show.id }}">Show</a>
                                 <a href="/shows/{{ show.id }}/edit">Edit</a>
