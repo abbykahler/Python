@@ -19,8 +19,7 @@ def CreateNewShow(request):
             return redirect('/shows/new')
     else:
         Show.objects.create(
-            title=request.POST['title'], 
-            network=request.POST['network'], 
+            title=request.POST['title'],  
             release_date=request.POST['release_date'], 
             description=request.POST['description'])
     
@@ -48,7 +47,7 @@ def EditShow(request, id):
     return render(request, 'editShow.html', context)
 
 def UpdateShow(request, id ):
-    errors = Show.objects.validator(request.POST)
+    # errors = Show.objects.validator(request.POST)
     if len(errors) > 0:
         for key, value in errors.items():
             messages.error(request, value)
@@ -56,7 +55,6 @@ def UpdateShow(request, id ):
     else:
         show = Show.objects.get(id=id)
         show.title = request.POST['title']
-        show.network = request.POST['network']
         show.release_date = request.POST['release_date']
         show.description = request.POST['description']
         show.save()

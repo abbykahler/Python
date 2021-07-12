@@ -21,11 +21,8 @@
             <div class="edit">
                 <form action="/shows/create" method="post">
                     {% csrf_token %}
-                    <label for="title">Title:</label>
+                    <label for="title">Muscle</label>
                     <input type="text" name='title' id="title"><br><br>
-
-                    <label for="network">Network</label>
-                    <input type="text" name='network' id="network"><br><br>
 
                     <label for="release_date">Release Date</label>
                     <input type="date" name='release_date' id="release_date"><br><br>

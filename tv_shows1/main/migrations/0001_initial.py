@@ -16,7 +16,6 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=255)),
-                ('network', models.CharField(max_length=25)),
                 ('release_date', models.DateTimeField()),
                 ('description', models.CharField(max_length=25)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),

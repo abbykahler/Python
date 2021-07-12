@@ -9,9 +9,7 @@ class TvManager(models.Manager):
         errors = {}
         if len(post_data['title']) < 2:
             errors['title'] = "Title too short"
-        if len(post_data['network']) < 2:
-            errors['network'] = "Network name is too short"
-            if len(post_data['description']) < 10:
+            if len(post_data['description']) < 2:
                 errors['description'] = "Description name is too short"
         return errors
 
@@ -19,7 +17,6 @@ class TvManager(models.Manager):
 
 class Show(models.Model): 
     title = models.CharField(max_length=255)
-    network = models.CharField(max_length=25)
     release_date = models.DateTimeField()
     description = models.CharField(max_length=25)
     created_at = models.DateTimeField(auto_now_add=True)
