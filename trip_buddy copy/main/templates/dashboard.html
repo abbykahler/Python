@@ -17,13 +17,12 @@
         <div>
         {% csrf_token %}
         <h1>Hello {{ current_user.first_name }}</h1>
-        <h2>Your trips</h2>
+        <h2>Your workouts</h2>
         <table>
             <tr>
-                <th>Destination</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Plan</th>
+                <th>Exercise</th>
+                <th>Date</th>
+                <th>Comment</th>
                 <th>Actions</th>
             </tr>
         
@@ -32,7 +31,7 @@
                     <tr>
                         <td><a href="/trips/{{trip.id}}"> {{trip.destination}}</a></td>
                         <td>{{trip.start_date}}</td>
-                        <td>{{trip.end_date}}</td>
+                        {% comment %} <td>{{trip.end_date}}</td> {% endcomment %}
                         <td>{{trip.plan}}</td>
                         <td><a href='/trips/{{trip.id}}/delete'>Remove</a> | <a href='/trips/{{trip.id}}/edit'>Edit</a></td>
                     </tr>
@@ -41,7 +40,7 @@
             </tbody>
         </table>
                 <div class="addtrip">
-                    <a href="/trips/new">Create a new trip!</a>
+                    <a href="/trips/new">Create a new workout!</a>
                 </div>
     </body>
 </html>
