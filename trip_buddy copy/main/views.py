@@ -81,7 +81,10 @@ def dashboard(request):
     }
 
     return render(request, 'dashboard.html', context)
+
+
 def create(request):
+
     current_user = User.objects.get(id=request.session['user_id'])
     trip_errors = Trip.objects.trip_validator(request.POST) 
     
