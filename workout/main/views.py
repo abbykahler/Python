@@ -36,3 +36,6 @@ def stretch(request):
 
 def yoga(request):
     return render(request, 'yoga.html')
+
+def low(request):
+    return render(request, 'low.html')
