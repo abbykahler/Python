@@ -13,4 +13,6 @@ urlpatterns = [
     path('booty', views.booty),
     path('stretch', views.stretch),
     path('yoga', views.yoga),
+    path('low', views.low),
+    
 ]
